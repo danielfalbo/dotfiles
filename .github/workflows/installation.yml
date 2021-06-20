@@ -1,4 +1,4 @@
-name: CI
+name: Installation
 
 on: push
 
@@ -9,5 +9,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Run the installation script
+      - name: Run the `install.sh` script
         run: ./install.sh
