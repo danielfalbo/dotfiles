@@ -14,8 +14,6 @@ python -m pip install --upgrade pip
 
 pip install -r requirements.txt
 
-brew bundle
-
 dotbot -d "${BASEDIR}" -c  "${CONFIG}" "${@}"
 
 deactivate
