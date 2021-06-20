@@ -1,10 +1,11 @@
-COMPLETION_WAITING_DOTS=true
-ENABLE_CORRECTION=true
-KEYTIMEOUT=1
-VI_MODE_SET_CURSOR=true
-ZSH_THEME=robbyrussell
+export BAT_THEME=ansi
+export COMPLETION_WAITING_DOTS=true
+export ENABLE_CORRECTION=true
+export KEYTIMEOUT=1
+export VI_MODE_SET_CURSOR=true
+export ZSH_THEME=robbyrussell
 
-plugins=(
+export plugins=(
     colored-man-pages
     command-not-found
     common-aliases
@@ -13,7 +14,7 @@ plugins=(
     z
 )
 
-homebrew_plugins=(
+export homebrew_plugins=(
     autosuggestions
     syntax-highlighting
 )
@@ -33,6 +34,8 @@ alias cd=c
 tl() {
     tldr $@ || (tldr --update && tldr $@)
 }
+
+alias cat='bat -p'
 
 alias rm='trash -F'
 

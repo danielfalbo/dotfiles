@@ -1,6 +1,7 @@
 tap "homebrew/cask-fonts"
 tap "homebrew/command-not-found"
 
+brew "bat"
 brew "exa"
 brew "tealdeer"
 brew "trash"
