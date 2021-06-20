@@ -9,3 +9,5 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+source "$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
