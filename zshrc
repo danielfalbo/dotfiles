@@ -25,3 +25,8 @@ source ~/.oh-my-zsh/oh-my-zsh.sh
 tl() {
     tldr $@ || (tldr --update && tldr $@)
 }
+
+
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='trash -F'
