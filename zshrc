@@ -7,8 +7,10 @@ ZSH_THEME=robbyrussell
 plugins=(
     colored-man-pages
     command-not-found
+    common-aliases
     git
     vi-mode
+    z
 )
 
 homebrew_plugins=(
@@ -22,11 +24,17 @@ done
 
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
+c() {
+    cd $@ NUL || z $@
+}
+
+alias cd=c
+
 tl() {
     tldr $@ || (tldr --update && tldr $@)
 }
 
-
-alias cp='cp -i'
-alias mv='mv -i'
 alias rm='trash -F'
+
+alias ls='exa --icons'
+alias tree='ls --tree'
