@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean: ["~"]
+
+- link:
+    ~/.gitconfig:
+    ~/.zshrc:
+
+- create:
+    - ~/Developer
+
+- shell:
+    - [
+        test -d ~/.oh-my-zsh || sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)",
+        Installing ohmyzsh,
+      ]
