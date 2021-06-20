@@ -1,13 +1,27 @@
-export ZSH="/Users/danielfalbo/.oh-my-zsh"
+COMPLETION_WAITING_DOTS=true
+ENABLE_CORRECTION=true
+KEYTIMEOUT=1
+VI_MODE_SET_CURSOR=true
+ZSH_THEME=robbyrussell
 
-ZSH_THEME="robbyrussell"
+plugins=(
+    colored-man-pages
+    command-not-found
+    git
+    vi-mode
+)
 
-ENABLE_CORRECTION="true"
+homebrew_plugins=(
+    autosuggestions
+    syntax-highlighting
+)
 
-COMPLETION_WAITING_DOTS="true"
+for plugin in ${homebrew_plugins}; do
+    source $(brew --prefix)/share/zsh-${plugin}/zsh-${plugin}.zsh
+done
 
-plugins=(git)
+source ~/.oh-my-zsh/oh-my-zsh.sh
 
-source $ZSH/oh-my-zsh.sh
-
-source "$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+tl() {
+    tldr $@ || (tldr --update && tldr $@)
+}
