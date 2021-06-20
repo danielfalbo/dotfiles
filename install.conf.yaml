@@ -4,11 +4,12 @@
       relink: true
       force: true
 
-- clean: ["~"]
+- clean: ["~", "~/.config"]
 
 - link:
-    ~/.gitconfig:
-    ~/.zshrc:
+    ~/.config/karabiner: config/karabiner
+    ~/.gitconfig: gitconfig
+    ~/.zshrc: zshrc
 
 - create:
     - ~/Developer
