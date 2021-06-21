@@ -19,11 +19,11 @@ export homebrew_plugins=(
     syntax-highlighting
 )
 
+source ~/.oh-my-zsh/oh-my-zsh.sh
+
 for plugin in ${homebrew_plugins}; do
     source $(brew --prefix)/share/zsh-${plugin}/zsh-${plugin}.zsh
 done
-
-source ~/.oh-my-zsh/oh-my-zsh.sh
 
 c() {
     cd $@ NUL || z $@
