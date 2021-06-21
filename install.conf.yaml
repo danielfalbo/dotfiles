@@ -13,7 +13,7 @@
       description: Installing brew packages
       stdout: true
     - command: defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
-      descriprtion: Enabling key-repeating in VSCode
+      description: Enabling key-repeating in VSCode
 
 - clean: ["~"]
 
