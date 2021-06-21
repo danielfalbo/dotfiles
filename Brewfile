@@ -10,4 +10,5 @@ brew "zsh-syntax-highlighting"
 
 cask "font-victor-mono-nerd-font"
 cask "karabiner-elements"
+cask "notion"
 cask "visual-studio-code"
