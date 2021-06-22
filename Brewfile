@@ -8,6 +8,7 @@ brew "trash"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
+cask "deepl"
 cask "font-victor-mono-nerd-font"
 cask "karabiner-elements"
 cask "notion"
