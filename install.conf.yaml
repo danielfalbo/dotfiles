@@ -7,11 +7,14 @@
 - shell:
     - command: test -d ~/.oh-my-zsh || sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
       description: Installing ohmyzsh
+
     - command: which brew || bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       description: Installing homebrew
+
     - command: brew bundle
       description: Installing brew packages
       stdout: true
+
     - command: defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
       description: Enabling key-repeating in VSCode
 
