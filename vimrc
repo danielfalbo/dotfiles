@@ -5,13 +5,7 @@ ino <c-w> <c-g>u<c-w>
 let &t_EI.="\e[2 q"
 let &t_SI.="\e[6 q"
 let &t_SR.="\e[4 q"
-let &ttm=$KEYTIMEOUT
-let g:netrw_banner=0
-let g:netrw_liststyle=3
-let g:netrw_winsize=20
-let mapleader = " "
-let maplocalleader = " "
-nn <leader>n <cmd>Lexplore<cr>
+let &ttm=1
 nn <s-tab> <cmd>bp<cr>
 nn <tab> <cmd>bn<cr>
 nn Y y$
