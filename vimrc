@@ -1,25 +1,38 @@
-au! bufwritepost $MYVIMRC source %
 filetype plugin indent on
-ino <c-u> <c-g>u<c-u>
-ino <c-w> <c-g>u<c-w>
+
+syntax on
+
+set clipboard=unnamed
+
+set expandtab shiftwidth=4 tabstop=4 softtabstop=4 autoindent smartindent
+
+set linebreak breakindent
+
+set listchars=tab:>\ ,trail:· list
+
+set number
+
+set splitbelow splitright
+
+set ttimeoutlen=1
+
+vnoremap < <gv
+vnoremap > >gv
+
+inoremap <c-u> <c-g>u<c-u>
+inoremap <c-w> <c-g>u<c-w>
+
+nnoremap <s-tab> <cmd>bp<cr>
+nnoremap <tab> <cmd>bn<cr>
+
+nnoremap Y y$
+
+nnoremap j gj
+nnoremap k gk
+
+autocmd! bufwritepost $MYVIMRC source %
+
+" Cursor
 let &t_EI.="\e[2 q"
 let &t_SI.="\e[6 q"
 let &t_SR.="\e[4 q"
-let &ttm=1
-nn <s-tab> <cmd>bp<cr>
-nn <tab> <cmd>bn<cr>
-nn Y y$
-nn j gj
-nn k gk
-set ar
-set cb=unnamed
-set et sw=4 ts=4 sts=4 ai si
-set hid
-set ic
-set lbr bri
-set lcs=tab:>\ ,trail:· list
-set nu
-set sb spr
-sy on
-vn < <gv
-vn > >gv
