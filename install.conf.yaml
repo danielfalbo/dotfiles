@@ -24,6 +24,7 @@
     ~/.config:
     ~/.gitconfig:
     ~/.inputrc:
+    ~/.vimrc:
     ~/.zshrc:
 
 - create:
