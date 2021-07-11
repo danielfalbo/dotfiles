@@ -25,13 +25,13 @@ for plugin in ${homebrew_plugins}; do
     source $(brew --prefix)/share/zsh-${plugin}/zsh-${plugin}.zsh
 done
 
-c() {
+function c {
     cd $@ NUL || z $@
 }
 
 alias cd=c
 
-tl() {
+function tl {
     tldr $@ || (tldr --update && tldr $@)
 }
 
