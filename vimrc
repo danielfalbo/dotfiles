@@ -19,6 +19,12 @@ set ttimeoutlen=1
 vnoremap < <gv
 vnoremap > >gv
 
+vnoremap <c-a> <c-a>gv
+vnoremap <c-x> <c-x>gv
+
+vnoremap g<c-a> g<c-a>gv
+vnoremap g<c-x> g<c-x>gv
+
 inoremap <c-u> <c-g>u<c-u>
 inoremap <c-w> <c-g>u<c-w>
 
