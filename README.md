@@ -1,6 +1,6 @@
 # dotfiles
 
-:keyboard:
+> Daniel@Multivac
 
 ## Installation
 

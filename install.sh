@@ -13,6 +13,6 @@ source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 
-dotbot -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+dotbot -d "${BASEDIR}" -c "${CONFIG}" $@
 
 deactivate
