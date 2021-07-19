@@ -36,7 +36,7 @@ nnoremap Y y$
 nnoremap j gj
 nnoremap k gk
 
-autocmd! bufwritepost $MYVIMRC source %
+autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
 " Cursor
 let &t_EI.="\e[2 q"
