@@ -2,8 +2,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export BAT_THEME=ansi
-
 COMPLETION_WAITING_DOTS=true
 ENABLE_CORRECTION=true
 KEYTIMEOUT=1
@@ -49,3 +47,5 @@ alias rm='trash -F'
 
 alias ls='exa --icons'
 alias tree='ls --tree'
+
+export BAT_THEME=ansi
