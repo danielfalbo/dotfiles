@@ -1,10 +1,10 @@
 # dotfiles
 
-> Daniel@Multivac
+[![Installation](https://github.com/danielfalbo/dotfiles/actions/workflows/installation.yml/badge.svg)](https://github.com/danielfalbo/dotfiles/actions/workflows/installation.yml)
+
+> `Daniel@Multivac ~ $ _`
 
 ## Installation
-
-[![Installation](https://github.com/danielfalbo/dotfiles/actions/workflows/installation.yml/badge.svg)](https://github.com/danielfalbo/dotfiles/actions/workflows/installation.yml)
 
 macOS
 
