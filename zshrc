@@ -35,12 +35,6 @@ function _cd_or_z {
 
 alias cd=_cd_or_z
 
-function _perseverant_tldr {
-    tldr $@ || (tldr --update && tldr $@)
-}
-
-alias tldr=_perseverant_tldr
-
 alias cat='bat -p'
 
 alias rm='trash -F'
