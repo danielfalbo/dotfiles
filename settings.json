@@ -1,6 +1,7 @@
 {
   "editor.fontFamily": "'VictorMono Nerd Font', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
+  "window.zoomLevel": 2,
 
   "editor.formatOnSave": true,
 
@@ -20,34 +21,26 @@
   "vim.leader": "<space>",
 
   "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<leader>", "r", "n"],
-      "commands": ["editor.action.rename"],
-      "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-    },
-
-    { "before": ["<leader>", "<space>"], "after": ["z", "a"] },
+    { "before": ["j"], "after": ["g", "j"] },
+    { "before": ["k"], "after": ["g", "k"] },
 
     { "before": ["Q"], "after": ["@", "q"] },
 
     { "before": ["Y"], "after": ["y", "$"] },
 
-    { "before": ["$"], "after": ["g", "$"] },
-    { "before": ["0"], "after": ["g", "0"] },
-    { "before": ["^"], "after": ["g", "^"] },
-    { "before": ["j"], "after": ["g", "j"] },
-    { "before": ["k"], "after": ["g", "k"] }
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"],
+      "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    }
   ],
 
   "vim.visualModeKeyBindingsNonRecursive": [
-    { "before": [">"], "after": [">", "g", "v"] },
-    { "before": ["<"], "after": ["<", "g", "v"] },
-
-    { "before": ["$"], "after": ["g", "$"] },
-    { "before": ["0"], "after": ["g", "0"] },
-    { "before": ["^"], "after": ["g", "^"] },
     { "before": ["j"], "after": ["g", "j"] },
-    { "before": ["k"], "after": ["g", "k"] }
+    { "before": ["k"], "after": ["g", "k"] },
+
+    { "before": [">"], "after": [">", "g", "v"] },
+    { "before": ["<"], "after": ["<", "g", "v"] }
   ],
 
   "window.autoDetectColorScheme": true,
