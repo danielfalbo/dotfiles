@@ -23,7 +23,7 @@ homebrew_plugins=(
 
 source ~/.oh-my-zsh/oh-my-zsh.sh
 source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
-source $(brew --prefix)/opt/powerlevel10k/config/p10k-lean-8colors.zsh
+source ~/.p10k.zsh
 
 for plugin in ${homebrew_plugins}; do
     source $(brew --prefix)/share/zsh-${plugin}/zsh-${plugin}.zsh
