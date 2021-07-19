@@ -1,8 +1,10 @@
 tap "homebrew/cask-fonts"
 tap "homebrew/command-not-found"
+tap "romkatv/powerlevel10k"
 
 brew "bat"
 brew "exa"
+brew "powerlevel10k"
 brew "tealdeer"
 brew "trash"
 brew "zsh-autosuggestions"

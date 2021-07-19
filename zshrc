@@ -1,11 +1,15 @@
-export BAT_THEME=ansi
-export COMPLETION_WAITING_DOTS=true
-export ENABLE_CORRECTION=true
-export KEYTIMEOUT=1
-export VI_MODE_SET_CURSOR=true
-export ZSH_THEME=robbyrussell
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-export plugins=(
+export BAT_THEME=ansi
+
+COMPLETION_WAITING_DOTS=true
+ENABLE_CORRECTION=true
+KEYTIMEOUT=1
+VI_MODE_SET_CURSOR=true
+
+plugins=(
     colored-man-pages
     command-not-found
     common-aliases
@@ -14,26 +18,30 @@ export plugins=(
     z
 )
 
-export homebrew_plugins=(
+homebrew_plugins=(
     autosuggestions
     syntax-highlighting
 )
 
 source ~/.oh-my-zsh/oh-my-zsh.sh
+source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
+source $(brew --prefix)/opt/powerlevel10k/config/p10k-lean-8colors.zsh
 
 for plugin in ${homebrew_plugins}; do
     source $(brew --prefix)/share/zsh-${plugin}/zsh-${plugin}.zsh
 done
 
-function c {
+function _cd_or_z {
     cd $@ NUL || z $@
 }
 
-alias cd=c
+alias cd=_cd_or_z
 
-function tl {
+function _perseverant_tldr {
     tldr $@ || (tldr --update && tldr $@)
 }
+
+alias tldr=_perseverant_tldr
 
 alias cat='bat -p'
 
