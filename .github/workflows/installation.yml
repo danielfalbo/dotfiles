@@ -9,5 +9,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Run the `install.sh` script
+      - name: Install the dotfiles
         run: ./install.sh

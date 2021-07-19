@@ -21,10 +21,11 @@
 - clean: ["~"]
 
 - link:
-    ~/.config:
-    ~/.gitconfig:
-    ~/.vimrc:
-    ~/.zshrc:
+    ~/.config/karabiner/karabiner.json: karabiner.json
+    ~/.gitconfig: gitconfig
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/Library/Application Support/Code/User/settings.json: settings.json
 
 - create:
     - ~/Developer

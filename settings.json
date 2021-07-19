@@ -1,0 +1,88 @@
+{
+  "editor.fontFamily": "'VictorMono Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+
+  "editor.formatOnSave": true,
+
+  "editor.renderWhitespace": "trailing",
+
+  "editor.wordWrap": "on",
+
+  "editor.linkedEditing": true,
+
+  "git.autofetch": true,
+
+  "vim.easymotion": true,
+  "vim.sneak": true,
+
+  "vim.useSystemClipboard": true,
+
+  "vim.leader": "<space>",
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"],
+      "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+
+    { "before": ["<leader>", "<space>"], "after": ["z", "a"] },
+
+    { "before": ["Q"], "after": ["@", "q"] },
+
+    { "before": ["Y"], "after": ["y", "$"] },
+
+    { "before": ["$"], "after": ["g", "$"] },
+    { "before": ["0"], "after": ["g", "0"] },
+    { "before": ["^"], "after": ["g", "^"] },
+    { "before": ["j"], "after": ["g", "j"] },
+    { "before": ["k"], "after": ["g", "k"] }
+  ],
+
+  "vim.visualModeKeyBindingsNonRecursive": [
+    { "before": [">"], "after": [">", "g", "v"] },
+    { "before": ["<"], "after": ["<", "g", "v"] },
+
+    { "before": ["$"], "after": ["g", "$"] },
+    { "before": ["0"], "after": ["g", "0"] },
+    { "before": ["^"], "after": ["g", "^"] },
+    { "before": ["j"], "after": ["g", "j"] },
+    { "before": ["k"], "after": ["g", "k"] }
+  ],
+
+  "window.autoDetectColorScheme": true,
+
+  "workbench.iconTheme": "material-icon-theme",
+
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "git.confirmSync": false,
+  "leetcode.hint.commandShortcut": false,
+  "leetcode.hint.commentDescription": false,
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.hint.setDefaultLanguage": false,
+  "python.showStartPage": false,
+  "workbench.activityBar.visible": false,
+  "workbench.editor.tabCloseButton": "off",
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": false,
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  "workbench.editorAssociations": { "*.ipynb": "jupyter.notebook.ipynb" },
+
+  "leetcode.defaultLanguage": "python3",
+
+  "[latex]": { "editor.formatOnSave": false },
+
+  "latex-workshop.view.pdf.viewer": "tab"
+}
