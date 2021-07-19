@@ -23,7 +23,6 @@
 - link:
     ~/.config:
     ~/.gitconfig:
-    ~/.inputrc:
     ~/.vimrc:
     ~/.zshrc:
 
