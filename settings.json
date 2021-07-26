@@ -39,8 +39,8 @@
     { "before": ["j"], "after": ["g", "j"] },
     { "before": ["k"], "after": ["g", "k"] },
 
-    { "before": [">"], "after": [">", "g", "v"] },
-    { "before": ["<"], "after": ["<", "g", "v"] }
+    { "before": ["<"], "after": ["<", "g", "v"] },
+    { "before": [">"], "after": [">", "g", "v"] }
   ],
 
   "window.autoDetectColorScheme": true,
