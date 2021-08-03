@@ -1,7 +1,6 @@
 {
   "editor.fontFamily": "'VictorMono Nerd Font', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "window.zoomLevel": 2,
 
   "editor.formatOnSave": true,
 
@@ -58,7 +57,6 @@
   "workbench.activityBar.visible": false,
   "workbench.editor.tabCloseButton": "off",
   "workbench.startupEditor": "none",
-  "workbench.statusBar.visible": false,
 
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",

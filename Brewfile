@@ -4,6 +4,7 @@ tap "romkatv/powerlevel10k"
 
 brew "bat"
 brew "exa"
+brew "mas"
 brew "powerlevel10k"
 brew "tldr"
 brew "trash"
@@ -17,3 +18,10 @@ cask "mactex-no-gui"
 cask "notion"
 cask "rectangle"
 cask "visual-studio-code"
+
+mas "Grammarly for Safari", id: 1462114288
+mas "Keynote", id: 409183694
+mas "Momentum", id: 1564329434
+mas "Notion Web Clipper", id: 1559269364
+mas "Numbers", id: 409203825
+mas "Xcode", id: 497799835
