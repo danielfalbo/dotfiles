@@ -1,6 +1,6 @@
 # dotfiles
 
-> `Daniel@Multivac ~ $ _`
+> 🧑‍💻 `Daniel@Multivac ~ $ _`
 
 ## Installation
 
