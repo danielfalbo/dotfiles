@@ -11,6 +11,7 @@ brew "trash"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
+cask "danielfalbo/formulae/focus-for-youtube"
 cask "deepl"
 cask "font-victor-mono-nerd-font"
 cask "karabiner-elements"
