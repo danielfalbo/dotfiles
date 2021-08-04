@@ -1,3 +1,4 @@
+tap "danielfalbo/formulae"
 tap "homebrew/cask-fonts"
 tap "homebrew/command-not-found"
 tap "romkatv/powerlevel10k"
@@ -11,13 +12,14 @@ brew "trash"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
-cask "danielfalbo/formulae/focus-for-youtube"
 cask "deepl"
+cask "focus-for-youtube"
 cask "font-victor-mono-nerd-font"
 cask "karabiner-elements"
 cask "mactex-no-gui"
 cask "notion"
 cask "rectangle"
+cask "shottr"
 cask "visual-studio-code"
 
 mas "Grammarly for Safari", id: 1462114288
