@@ -69,7 +69,10 @@
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
-  "workbench.editorAssociations": { "*.ipynb": "jupyter.notebook.ipynb" },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
 
   "leetcode.defaultLanguage": "python3",
 
