@@ -1,6 +1,5 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+PROMPT_CACHE="${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+[[ -r "${PROMPT_CACHE}" ]] && source "${PROMPT_CACHE}"
 
 COMPLETION_WAITING_DOTS=true
 ENABLE_CORRECTION=true
