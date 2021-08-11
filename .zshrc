@@ -25,9 +25,8 @@ source ~/.oh-my-zsh/oh-my-zsh.sh
 source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.p10k.zsh
 
-for plugin in ${homebrew_plugins}; do
+for plugin in ${homebrew_plugins}
     source $(brew --prefix)/share/zsh-${plugin}/zsh-${plugin}.zsh
-done
 
 function _cd_or_z {
     cd $@ NUL || z $@
