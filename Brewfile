@@ -1,12 +1,10 @@
 tap "danielfalbo/formulae"
 tap "homebrew/cask-fonts"
 tap "homebrew/command-not-found"
-tap "romkatv/powerlevel10k"
 
 brew "bat"
 brew "exa"
 brew "mas"
-brew "powerlevel10k"
 brew "tldr"
 brew "trash"
 brew "zsh-autosuggestions"

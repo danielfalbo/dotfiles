@@ -23,7 +23,6 @@
 - link:
     ~/.config/karabiner/karabiner.json: karabiner.json
     ~/.gitconfig: .gitconfig
-    ~/.p10k.zsh: .p10k.zsh
     ~/.vimrc: .vimrc
     ~/.zshrc: .zshrc
     ~/Library/Application Support/Code/User/settings.json: settings.json

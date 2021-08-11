@@ -1,10 +1,8 @@
-PROMPT_CACHE="${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-[[ -r "${PROMPT_CACHE}" ]] && source "${PROMPT_CACHE}"
-
 COMPLETION_WAITING_DOTS=true
 ENABLE_CORRECTION=true
 KEYTIMEOUT=1
 VI_MODE_SET_CURSOR=true
+ZSH_THEME="robbyrussell"
 
 plugins=(
     colored-man-pages
@@ -15,14 +13,12 @@ plugins=(
     z
 )
 
+source ~/.oh-my-zsh/oh-my-zsh.sh
+
 homebrew_plugins=(
     autosuggestions
     syntax-highlighting
 )
-
-source ~/.oh-my-zsh/oh-my-zsh.sh
-source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
-source ~/.p10k.zsh
 
 for plugin in ${homebrew_plugins}
     source $(brew --prefix)/share/zsh-${plugin}/zsh-${plugin}.zsh
