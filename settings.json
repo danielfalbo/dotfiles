@@ -53,7 +53,6 @@
   "leetcode.hint.commentDescription": false,
   "leetcode.hint.configWebviewMarkdown": false,
   "leetcode.hint.setDefaultLanguage": false,
-  "python.showStartPage": false,
   "workbench.activityBar.visible": false,
   "workbench.editor.tabCloseButton": "off",
   "workbench.startupEditor": "none",
@@ -70,7 +69,6 @@
   "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb",
     "*.pdf": "latex-workshop-pdf-hook"
   },
 
