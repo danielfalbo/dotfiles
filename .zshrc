@@ -5,6 +5,7 @@ VI_MODE_SET_CURSOR=true
 ZSH_THEME="robbyrussell"
 
 plugins=(
+    brew
     colored-man-pages
     command-not-found
     common-aliases
