@@ -1,4 +1,3 @@
-tap "danielfalbo/formulae"
 tap "homebrew/cask-fonts"
 tap "homebrew/command-not-found"
 
@@ -11,7 +10,6 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
 cask "deepl"
-cask "focus-for-youtube"
 cask "font-victor-mono-nerd-font"
 cask "karabiner-elements"
 cask "mactex-no-gui"
