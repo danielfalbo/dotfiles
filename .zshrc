@@ -37,4 +37,7 @@ alias rm='trash -F'
 alias ls='exa --icons'
 alias tree='ls --tree'
 
+# dfu for dotfiles update
+alias dfu='bubu && ~/.dotfiles/install.sh'
+
 export BAT_THEME=ansi
