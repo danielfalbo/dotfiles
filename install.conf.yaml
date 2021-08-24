@@ -38,3 +38,6 @@
 
     - command: open -a Karabiner-Elements
       description: Activating Karabiner
+
+    - command: open -a DeepL
+      description: Activating DeepL
