@@ -30,3 +30,10 @@
 
 - create:
     - ~/Developer
+
+- shell:
+    - command: open -a Rectangle
+      description: Activating Rectangle
+
+    - command: open -a Karabiner-Elements
+      description: Activating Karabiner
