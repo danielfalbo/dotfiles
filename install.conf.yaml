@@ -10,6 +10,7 @@
 
     - command: which brew || bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       description: Installing homebrew
+      stdout: true
 
     - command: brew bundle
       description: Installing brew packages
