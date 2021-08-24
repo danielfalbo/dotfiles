@@ -15,6 +15,7 @@ cask "karabiner-elements"
 cask "mactex-no-gui"
 cask "rectangle"
 cask "shottr"
+cask "spotify"
 cask "visual-studio-code"
 
 mas "Grammarly for Safari", id: 1462114288
