@@ -18,6 +18,7 @@ cask "shottr"
 cask "spotify"
 cask "visual-studio-code"
 
+mas "AdBlock Pro", id: 1018301773
 mas "Grammarly for Safari", id: 1462114288
 mas "Keynote", id: 409183694
 mas "Momentum", id: 1564329434
