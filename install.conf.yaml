@@ -41,3 +41,6 @@
 
     - command: open -a DeepL
       description: Activating DeepL
+
+    - command: open -a Shottr
+      description: Activating Shottr
