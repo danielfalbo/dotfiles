@@ -13,22 +13,6 @@
       "complex_modifications": {
         "rules": [
           {
-            "description": "Change ctrl+[ to native escape",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "open_bracket",
-                  "modifiers": {
-                    "mandatory": ["control"],
-                    "optional": ["any"]
-                  }
-                },
-                "to": { "key_code": "escape" },
-                "type": "basic"
-              }
-            ]
-          },
-          {
             "description": "Change right_command+hjkl to arrow keys",
             "manipulators": [
               {
@@ -73,6 +57,54 @@
                   }
                 },
                 "to": { "key_code": "right_arrow" },
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change control-[ to escape key",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "open_bracket",
+                  "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": { "key_code": "escape" },
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change control-m to return key",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "m",
+                  "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": { "key_code": "return_or_enter" },
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change control-h to delete key",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "h",
+                  "modifiers": {
+                    "mandatory": ["control"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": { "key_code": "delete_or_backspace" },
                 "type": "basic"
               }
             ]
