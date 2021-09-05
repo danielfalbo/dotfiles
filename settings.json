@@ -46,6 +46,8 @@
 
   "workbench.iconTheme": "material-icon-theme",
 
+  "workbench.sideBar.location": "right",
+
   "breadcrumbs.enabled": false,
   "editor.minimap.enabled": false,
   "git.confirmSync": false,
