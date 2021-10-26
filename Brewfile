@@ -18,7 +18,7 @@ cask "shottr"
 cask "spotify"
 cask "visual-studio-code"
 
-mas "AdBlock Pro", id: 1018301773
+mas "AdGuard for Safari", id: 1440147259
 mas "Grammarly for Safari", id: 1462114288
 mas "JSONPeep", id: 1458969831
 mas "Momentum", id: 1564329434
