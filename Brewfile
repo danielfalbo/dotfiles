@@ -21,9 +21,7 @@ cask "visual-studio-code"
 mas "AdBlock Pro", id: 1018301773
 mas "Grammarly for Safari", id: 1462114288
 mas "JSONPeep", id: 1458969831
-mas "Keynote", id: 409183694
 mas "Momentum", id: 1564329434
 mas "Notion Web Clipper", id: 1559269364
-mas "Numbers", id: 409203825
 mas "Vimari", id: 1480933944
 mas "Xcode", id: 497799835
