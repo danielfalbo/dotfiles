@@ -10,6 +10,7 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
 cask "deepl"
+cask "figma"
 cask "font-victor-mono-nerd-font"
 cask "karabiner-elements"
 cask "mactex-no-gui"
