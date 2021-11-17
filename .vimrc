@@ -36,6 +36,8 @@ nnoremap Y y$
 nnoremap j gj
 nnoremap k gk
 
+nnoremap Q @q
+
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
 " Cursor
