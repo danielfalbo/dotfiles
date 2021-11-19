@@ -45,3 +45,6 @@
 
     - command: open -a Shottr
       description: Activating Shottr
+
+    - command: open -a Fig
+      description: Activating Fig

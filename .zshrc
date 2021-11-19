@@ -1,3 +1,5 @@
+source ~/.fig/shell/pre.sh
+
 COMPLETION_WAITING_DOTS=true
 ENABLE_CORRECTION=true
 KEYTIMEOUT=1
@@ -40,3 +42,5 @@ alias tree='ls --tree'
 alias dfu='bubu && ~/.dotfiles/install.sh'
 
 export BAT_THEME=ansi
+
+source ~/.fig/fig.sh
