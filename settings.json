@@ -43,6 +43,8 @@
   ],
 
   "window.autoDetectColorScheme": true,
+  "workbench.preferredDarkColorTheme": "Atom One Dark",
+  "workbench.preferredLightColorTheme": "Atom One Light",
 
   "workbench.iconTheme": "material-icon-theme",
 
@@ -83,5 +85,7 @@
   "editor.accessibilitySupport": "off",
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
-  }
+  },
+
+  "workbench.colorTheme": "Atom One Dark"
 }
