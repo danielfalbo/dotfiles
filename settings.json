@@ -46,6 +46,7 @@
   "workbench.preferredDarkColorTheme": "Atom One Dark",
   "workbench.preferredLightColorTheme": "Atom One Light",
 
+  "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "material-icon-theme",
 
   "workbench.sideBar.location": "right",
@@ -87,5 +88,7 @@
     "FIG_NEW_SESSION": "1"
   },
 
-  "workbench.colorTheme": "Atom One Dark"
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.zoomLevel": 2
 }
