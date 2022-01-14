@@ -1,3 +1,5 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 source ~/.fig/shell/pre.sh
 
 COMPLETION_WAITING_DOTS=true
