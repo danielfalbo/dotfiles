@@ -9,6 +9,7 @@ brew "trash"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
+cask "chromium"
 cask "deepl"
 cask "fig"
 cask "figma"
