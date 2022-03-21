@@ -10,8 +10,6 @@ set linebreak breakindent
 
 set listchars=tab:>\ ,trail:· list
 
-set number
-
 set splitbelow splitright
 
 set ttimeoutlen=1
