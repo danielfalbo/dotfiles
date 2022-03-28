@@ -90,8 +90,6 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.zoomLevel": 2,
 
-  "editor.cursorBlinking": "expand",
-
   "editor.accessibilitySupport": "off",
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
