@@ -31,6 +31,16 @@
       "before": ["<leader>", "r", "n"],
       "commands": ["editor.action.rename"],
       "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+      "before": ["<leader>", "n"],
+      "commands": ["editor.action.marker.next"],
+      "when": ["editorFocus"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["editor.action.marker.prev"],
+      "when": ["editorFocus"]
     }
   ],
 
@@ -88,10 +98,10 @@
 
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "window.zoomLevel": 2,
 
   "editor.accessibilitySupport": "off",
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
-  }
+  },
+  "window.zoomLevel": 1
 }
