@@ -46,7 +46,7 @@
   "workbench.preferredDarkColorTheme": "Atom One Dark",
   "workbench.preferredLightColorTheme": "Atom One Light",
 
-  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorTheme": "Atom One Light",
   "workbench.iconTheme": "material-icon-theme",
 
   "workbench.sideBar.location": "right",
@@ -82,6 +82,9 @@
   "[latex]": { "editor.formatOnSave": false },
 
   "latex-workshop.view.pdf.viewer": "tab",
+
+  "terminal.integrated.scrollback": 999999,
+  "terminal.integrated.persistentSessionScrollback": 999999,
 
   "editor.accessibilitySupport": "off",
   "terminal.integrated.env.osx": {
