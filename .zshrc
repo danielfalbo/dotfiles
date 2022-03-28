@@ -1,3 +1,6 @@
+export PATH="${PATH}:${HOME}/.local/bin"
+eval "$(fig init zsh pre)"
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 COMPLETION_WAITING_DOTS=true
@@ -42,3 +45,5 @@ alias tree='ls --tree'
 alias dfu='bubu && ~/.dotfiles/install.sh'
 
 export BAT_THEME=ansi
+
+eval "$(fig init zsh post)"
