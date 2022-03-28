@@ -86,11 +86,6 @@
   "terminal.integrated.scrollback": 999999,
   "terminal.integrated.persistentSessionScrollback": 999999,
 
-  "editor.accessibilitySupport": "off",
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
-
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.zoomLevel": 2
