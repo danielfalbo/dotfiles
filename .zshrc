@@ -1,5 +1,4 @@
-export PATH="${PATH}:${HOME}/.local/bin"
-eval "$(fig init zsh pre)"
+source "$HOME/.fig/shell/zshrc.pre.zsh"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -46,4 +45,4 @@ alias dfu='bubu && ~/.dotfiles/install.sh'
 
 export BAT_THEME=ansi
 
-eval "$(fig init zsh post)"
+source "$HOME/.fig/shell/zshrc.post.zsh"
