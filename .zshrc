@@ -1,4 +1,5 @@
-source "$HOME/.fig/shell/zshrc.pre.zsh"
+# Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/zshrc.pre.zsh"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -45,4 +46,5 @@ alias dfu='bubu && ~/.dotfiles/install.sh'
 
 export BAT_THEME=ansi
 
-source "$HOME/.fig/shell/zshrc.post.zsh"
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zshrc.post.zsh"
