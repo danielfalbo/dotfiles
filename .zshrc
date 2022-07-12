@@ -45,6 +45,7 @@ alias tree='ls --tree'
 alias dfu='bubu && ~/.dotfiles/install.sh'
 
 export BAT_THEME=ansi
+export SCCACHE_CACHE_SIZE="50G"
 
 # Fig post block. Keep at the bottom of this file.
 . "$HOME/.fig/shell/zshrc.post.zsh"
