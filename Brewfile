@@ -28,6 +28,7 @@ cask "whatsapp"
 cask "zoom"
 
 mas "AdGuard for Safari", id: 1440147259
+mas "Amphetamine", id: 937984704
 mas "Grammarly for Safari", id: 1462114288
 mas "JSONPeep", id: 1458969831
 mas "Keepa - Price Tracker", id: 1533805339
