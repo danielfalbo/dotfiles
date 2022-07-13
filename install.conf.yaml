@@ -13,7 +13,7 @@
       stdout: true
       stdin: true
 
-    - command: brew bundle
+    - command: /opt/homebrew/bin/brew bundle
       description: Installing brew packages
       stdout: true
 
