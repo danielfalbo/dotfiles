@@ -22,7 +22,9 @@ cask "rectangle"
 cask "sf-symbols"
 cask "shottr"
 cask "spotify"
+cask "telegram"
 cask "visual-studio-code"
+cask "whatsapp"
 cask "zoom"
 
 mas "AdGuard for Safari", id: 1440147259
