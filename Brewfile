@@ -2,6 +2,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/command-not-found"
 
 brew "bat"
+brew "cocoapods"
 brew "exa"
 brew "mas"
 brew "node"
