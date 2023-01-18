@@ -7,7 +7,6 @@ ENABLE_CORRECTION=true
 KEYTIMEOUT=1
 VI_MODE_SET_CURSOR=true
 ZSH_THEME="robbyrussell"
-ZSH_TMUX_AUTOSTART=true
 
 plugins=(
     brew
