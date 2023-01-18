@@ -49,5 +49,16 @@ alias dfu='bubu && ~/.dotfiles/install.sh'
 export BAT_THEME=ansi
 export SCCACHE_CACHE_SIZE="50G"
 
+# TODO: aliases and functions to avoid copypasting
+function _autovenv() {
+    if [[ -n $(find $(g rev-parse --show-toplevel NE) -maxdepth 2 -name 'pyvenv.cfg' -print -quit NE) ]]; then
+        source "$(find $(g rev-parse --show-toplevel) -maxdepth 2 -name 'pyvenv.cfg' -print -quit | xargs dirname)/bin/activate"
+    else
+        deactivate NE
+    fi
+}
+_autovenv
+chpwd() { _autovenv }
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
