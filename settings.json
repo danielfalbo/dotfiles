@@ -69,6 +69,8 @@
   "leetcode.hint.configWebviewMarkdown": false,
   "leetcode.hint.setDefaultLanguage": false,
   "workbench.activityBar.visible": false,
+  "window.commandCenter": false,
+  "workbench.statusBar.visible": false,
   "workbench.editor.tabCloseButton": "off",
   "workbench.startupEditor": "none",
 
@@ -105,7 +107,6 @@
   },
   "editor.unicodeHighlight.nonBasicASCII": false,
 
-  "window.commandCenter": true,
   "editor.inlineSuggest.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "python.formatting.provider": "black",
