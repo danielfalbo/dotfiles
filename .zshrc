@@ -7,7 +7,7 @@ ENABLE_CORRECTION=true
 KEYTIMEOUT=1
 VI_MODE_SET_CURSOR=true
 ZSH_THEME="robbyrussell"
-[[ $TERMINAL_EMULATOR != "JetBrains-JediTerm" ]] && ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=true
 
 plugins=(
     brew
