@@ -56,7 +56,7 @@
   "workbench.preferredDarkColorTheme": "Atom One Dark",
   "workbench.preferredLightColorTheme": "Atom One Light",
 
-  "workbench.colorTheme": "Atom One Light",
+  "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "material-icon-theme",
 
   "workbench.sideBar.location": "right",
@@ -105,5 +105,15 @@
   },
   "editor.unicodeHighlight.nonBasicASCII": false,
 
-  "window.commandCenter": true
+  "window.commandCenter": true,
+  "editor.inlineSuggest.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "python.formatting.provider": "black",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "window.zoomLevel": 1
 }
