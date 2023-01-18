@@ -26,6 +26,7 @@
     ~/.config/karabiner/karabiner.json: karabiner.json
     ~/.gitconfig: .gitconfig
     ~/.gitignore: .global.gitignore
+    ~/.tmux.conf: .tmux.conf
     ~/.vimrc: .vimrc
     ~/.zshrc: .zshrc
     ~/Library/Application Support/Code/User/settings.json: settings.json

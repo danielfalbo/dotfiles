@@ -7,6 +7,7 @@ ENABLE_CORRECTION=true
 KEYTIMEOUT=1
 VI_MODE_SET_CURSOR=true
 ZSH_THEME="robbyrussell"
+[[ $TERMINAL_EMULATOR != "JetBrains-JediTerm" ]] && ZSH_TMUX_AUTOSTART=true
 
 plugins=(
     brew
@@ -14,6 +15,7 @@ plugins=(
     command-not-found
     common-aliases
     git
+    tmux
     vi-mode
     z
 )
@@ -37,6 +39,8 @@ alias cd=_cd_or_z
 alias cat='bat -p'
 
 alias rm='trash -F'
+
+alias lg=lazygit
 
 alias ls='exa --icons'
 alias tree='ls --tree'
