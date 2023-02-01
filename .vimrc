@@ -16,6 +16,8 @@ set ttimeoutlen=1
 
 set nu
 
+set showtabline=2
+
 vnoremap < <gv
 vnoremap > >gv
 
