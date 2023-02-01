@@ -49,3 +49,9 @@
 
     - command: open -a Fig
       description: Activating Fig
+
+    - command: defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles"
+      description: Specify the preferences directory
+
+    - command: defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+      description: Tell iTerm2 to use the custom preferences in the directory
