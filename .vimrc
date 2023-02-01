@@ -14,6 +14,8 @@ set splitbelow splitright
 
 set ttimeoutlen=1
 
+set nu
+
 vnoremap < <gv
 vnoremap > >gv
 
@@ -37,6 +39,9 @@ nnoremap k gk
 nnoremap Q @q
 
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
+
+colorscheme habamax
+hi Normal guibg=NONE ctermbg=NONE
 
 " Cursor
 let &t_EI.="\e[2 q"
