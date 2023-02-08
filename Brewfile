@@ -15,7 +15,6 @@ brew "zsh-syntax-highlighting"
 
 cask "chromium"
 cask "deepl"
-cask "fantastical"
 cask "figma"
 cask "font-victor-mono-nerd-font"
 cask "google-drive"
