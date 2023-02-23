@@ -41,7 +41,9 @@
       "before": ["<leader>", "p"],
       "commands": ["editor.action.marker.prev"],
       "when": ["editorFocus"]
-    }
+    },
+    { "before": ["u"], "commands": ["undo"] },
+    { "before": ["c-r"], "commands": ["redo"] }
   ],
 
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -56,7 +58,7 @@
   "workbench.preferredDarkColorTheme": "Atom One Dark",
   "workbench.preferredLightColorTheme": "Atom One Light",
 
-  "workbench.colorTheme": "Atom One Light",
+  "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "material-icon-theme",
 
   "workbench.sideBar.location": "right",
@@ -115,5 +117,6 @@
     "plaintext": false,
     "markdown": false
   },
-  "window.zoomLevel": 1
+  "window.zoomLevel": 2,
+  "leetcode.workspaceFolder": "/Users/danielfalbo/.leetcode"
 }
