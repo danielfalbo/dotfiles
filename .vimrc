@@ -57,7 +57,35 @@ endfunction
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
 colorscheme habamax
-hi Normal guibg=NONE ctermbg=NONE
+hi Normal ctermbg=NONE
+
+let s:hidden_all=0
+function! ToggleHideAll() abort
+    if s:hidden_all==0
+        let s:hidden_all=1
+        set noshowmode
+        set showtabline=0
+        set foldcolumn=12
+        set signcolumn=yes
+        set numberwidth=20
+        hi LineNr ctermfg=0
+        hi EndOfBuffer ctermfg=0
+    else
+        let s:hidden_all=0
+        set showmode
+        set showtabline=2
+        set foldcolumn=0
+        set signcolumn=auto
+        set numberwidth=4
+        hi LineNr ctermfg=240
+        hi EndOfBuffer ctermfg=240
+    endif
+endfunction
+
+nnoremap <space> <nop>
+let mapleader=" "
+
+nnoremap <silent> <Leader>h :call ToggleHideAll()<CR>
 
 " Cursor
 let &t_EI.="\e[2 q"
