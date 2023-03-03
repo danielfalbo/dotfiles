@@ -66,10 +66,6 @@
   "breadcrumbs.enabled": false,
   "editor.minimap.enabled": false,
   "git.confirmSync": false,
-  "leetcode.hint.commandShortcut": false,
-  "leetcode.hint.commentDescription": false,
-  "leetcode.hint.configWebviewMarkdown": false,
-  "leetcode.hint.setDefaultLanguage": false,
   "workbench.activityBar.visible": false,
   "window.commandCenter": false,
   "workbench.editor.tabCloseButton": "off",
@@ -89,8 +85,6 @@
   "workbench.editorAssociations": {
     "*.pdf": "latex-workshop-pdf-hook"
   },
-
-  "leetcode.defaultLanguage": "python3",
 
   "[latex]": { "editor.formatOnSave": false },
 
@@ -117,6 +111,8 @@
     "plaintext": false,
     "markdown": false
   },
-  "window.zoomLevel": 2,
-  "leetcode.workspaceFolder": "/Users/danielfalbo/.leetcode"
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "window.zoomLevel": 5
 }
