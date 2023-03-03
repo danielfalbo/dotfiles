@@ -16,8 +16,6 @@ set ttimeoutlen=1
 
 set nu
 
-set showtabline=2
-
 vnoremap < <gv
 vnoremap > >gv
 
@@ -60,7 +58,7 @@ colorscheme habamax
 hi Normal ctermbg=NONE
 
 let s:hidden_all=0
-function! ToggleHideAll() abort
+function! ToggleFocusMode() abort
     if s:hidden_all==0
         let s:hidden_all=1
         set noshowmode
@@ -85,7 +83,8 @@ endfunction
 nnoremap <space> <nop>
 let mapleader=" "
 
-nnoremap <silent> <Leader>h :call ToggleHideAll()<CR>
+nnoremap <silent> <leader>h :call ToggleFocusMode()<cr>
+call ToggleFocusMode()
 
 " Cursor
 let &t_EI.="\e[2 q"
