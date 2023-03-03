@@ -58,7 +58,7 @@
   "workbench.preferredDarkColorTheme": "Atom One Dark",
   "workbench.preferredLightColorTheme": "Atom One Light",
 
-  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorTheme": "Atom One Light",
   "workbench.iconTheme": "material-icon-theme",
 
   "workbench.sideBar.location": "right",
@@ -104,7 +104,6 @@
 
   "editor.inlineSuggest.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "python.formatting.provider": "black",
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
@@ -113,6 +112,5 @@
   },
   "[python]": {
     "editor.formatOnType": true
-  },
-  "window.zoomLevel": 5
+  }
 }
