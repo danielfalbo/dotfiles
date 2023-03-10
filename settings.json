@@ -112,5 +112,6 @@
   },
   "[python]": {
     "editor.formatOnType": true
-  }
+  },
+  "java.debug.settings.vmArgs": "-ea"
 }
