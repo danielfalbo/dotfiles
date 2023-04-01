@@ -99,6 +99,8 @@
   "editor.accessibilitySupport": "off",
   "editor.unicodeHighlight.nonBasicASCII": false,
 
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+
   "editor.inlineSuggest.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "[python]": { "editor.formatOnType": true },
