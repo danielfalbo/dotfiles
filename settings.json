@@ -74,13 +74,21 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
 
-  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "[cpp]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
+
+  "[java]": { "editor.defaultFormatter": "redhat.java" },
+
+  "[python]": { "editor.defaultFormatter": "ms-python.python" },
+
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "off",
+      "strings": "off"
+    }
+  },
 
   "workbench.editorAssociations": {
     "*.pdf": "latex-workshop-pdf-hook"
@@ -103,7 +111,7 @@
 
   "editor.inlineSuggest.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "[python]": { "editor.formatOnType": true },
   "java.debug.settings.vmArgs": "-ea",
-  "markdown-preview-enhanced.previewTheme": "atom-dark.css"
+
+  "editor.formatOnType": true
 }
