@@ -58,7 +58,7 @@
   "workbench.preferredDarkColorTheme": "Atom One Dark",
   "workbench.preferredLightColorTheme": "Atom One Light",
 
-  "workbench.colorTheme": "Atom One Light",
+  "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "material-icon-theme",
 
   "workbench.sideBar.location": "right",
@@ -97,21 +97,11 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 
   "editor.accessibilitySupport": "off",
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
   "editor.unicodeHighlight.nonBasicASCII": false,
 
   "editor.inlineSuggest.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": false
-  },
-  "[python]": {
-    "editor.formatOnType": true
-  },
-  "java.debug.settings.vmArgs": "-ea"
+  "[python]": { "editor.formatOnType": true },
+  "java.debug.settings.vmArgs": "-ea",
+  "markdown-preview-enhanced.previewTheme": "atom-dark.css"
 }
