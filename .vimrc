@@ -54,6 +54,15 @@ endfunction
 
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
+if !isdirectory($HOME."/.vim")
+    call mkdir($HOME."/.vim", "", 0770)
+endif
+if !isdirectory($HOME."/.vim/undo-dir")
+    call mkdir($HOME."/.vim/undo-dir", "", 0700)
+endif
+set undodir=~/.vim/undo-dir
+set undofile
+
 colorscheme habamax
 hi Normal ctermbg=NONE
 
@@ -69,6 +78,7 @@ function! EnableFocusMode()
     set foldcolumn=12
     set signcolumn=yes
     set numberwidth=20
+    set noruler
     hi LineNr ctermfg=0
     hi EndOfBuffer ctermfg=0
 endfunction
@@ -80,6 +90,7 @@ function! DisableFocusMode()
     set foldcolumn=0
     set signcolumn=auto
     set numberwidth=4
+    set ruler
     hi LineNr ctermfg=240
     hi EndOfBuffer ctermfg=240
 endfunction
@@ -92,6 +103,9 @@ nnoremap <silent> <leader>z :call ToggleFocusMode()<cr>
 
 " setup disabled focus mode settings when starting vim
 call DisableFocusMode()
+
+" return to last edit position when opening files
+autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
 " Cursor
 let &t_EI.="\e[2 q"
