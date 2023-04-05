@@ -27,11 +27,11 @@ homebrew_plugins=(
 for plugin in ${homebrew_plugins}
     source $(brew --prefix)/share/zsh-${plugin}/zsh-${plugin}.zsh
 
-function _cd_or_z {
+function cd_or_z {
     cd $@ NUL || z $@
 }
 
-alias cd=_cd_or_z
+alias cd=cd_or_z
 
 alias cat='bat -p'
 
