@@ -25,6 +25,7 @@ cask "notion"
 cask "rectangle"
 cask "sf-symbols"
 cask "shottr"
+cask "slack"
 cask "spotify"
 cask "visual-studio-code"
 
