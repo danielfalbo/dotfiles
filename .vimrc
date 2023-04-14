@@ -38,6 +38,8 @@ nnoremap k gk
 
 nnoremap Q @q
 
+nnoremap <f6> :w<cr>
+
 nnoremap <c-w>- :call RepeatResize('-')<cr>
 nnoremap <c-w>+ :call RepeatResize('+')<cr>
 nnoremap <c-w>< :call RepeatResize('<')<cr>
