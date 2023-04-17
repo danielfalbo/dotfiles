@@ -77,22 +77,19 @@ function! EnableFocusMode()
     let s:focusing=1
     set noshowmode
     set showtabline=0
-    set foldcolumn=12
-    set signcolumn=yes
-    set numberwidth=20
     set noruler
+    set nonu
     hi LineNr ctermfg=0
     hi EndOfBuffer ctermfg=0
+    echo | " to clear the cmd
 endfunction
 
 function! DisableFocusMode()
     let s:focusing=0
     set showmode
     set showtabline=2
-    set foldcolumn=0
-    set signcolumn=auto
-    set numberwidth=4
     set ruler
+    set nu
     hi LineNr ctermfg=240
     hi EndOfBuffer ctermfg=240
 endfunction
