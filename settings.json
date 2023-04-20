@@ -81,6 +81,7 @@
   "[java]": { "editor.defaultFormatter": "redhat.java" },
 
   "[python]": { "editor.defaultFormatter": "ms-python.python" },
+  "python.formatting.provider": "autopep8",
 
   "[markdown]": {
     "editor.quickSuggestions": {
