@@ -114,5 +114,7 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "java.debug.settings.vmArgs": "-ea",
 
-  "editor.formatOnType": true
+  "editor.formatOnType": true,
+
+  "css.lint.unknownAtRules": "ignore"
 }
