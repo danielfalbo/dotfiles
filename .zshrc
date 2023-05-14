@@ -42,7 +42,7 @@ alias lg=lazygit
 alias ls='exa --icons'
 alias tree='ls --tree'
 
-alias dfu='bubu && ~/.dotfiles/install.sh'
+alias dfu='bubu && brew cleanup -s && ~/.dotfiles/install.sh'
 
 export BAT_THEME=ansi
 export SCCACHE_CACHE_SIZE="50G"
