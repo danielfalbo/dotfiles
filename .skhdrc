@@ -1,2 +1,2 @@
-# global shortcut to open new safari window
-cmd + alt - n: osascript -e 'tell application "Safari" to make new document' -e 'tell application "Safari" to activate'
+# global shortcut to open new safari window and maximize it
+cmd + alt - n: osascript -e 'tell application "Safari" to make new document' -e 'tell application "Safari" to activate' && skhd -k "ctrl + alt - return"
