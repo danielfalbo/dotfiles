@@ -1,0 +1,2 @@
+# global shortcut to open new safari window
+cmd + alt - n: osascript -e 'tell application "Safari" to make new document' -e 'tell application "Safari" to activate'
