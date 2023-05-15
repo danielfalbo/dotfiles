@@ -26,6 +26,7 @@ cask "rectangle"
 cask "sf-symbols"
 cask "shottr"
 cask "slack"
+cask "spaceman"
 cask "spotify"
 cask "visual-studio-code"
 

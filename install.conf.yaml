@@ -47,6 +47,9 @@
     - command: open -a Shottr
       description: Activating Shottr
 
+    - command: open -a Spaceman
+      description: Activating Spaceman
+
     - command: defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles"
       description: Setting iTerm preferences directory
 
