@@ -58,7 +58,7 @@
   "workbench.preferredDarkColorTheme": "Atom One Dark",
   "workbench.preferredLightColorTheme": "Atom One Light",
 
-  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorTheme": "Atom One Light",
   "workbench.iconTheme": "material-icon-theme",
 
   "workbench.sideBar.location": "right",
@@ -116,5 +116,9 @@
 
   "editor.formatOnType": true,
 
-  "css.lint.unknownAtRules": "ignore"
+  "css.lint.unknownAtRules": "ignore",
+
+  "files.associations": {
+    ".skhdrc": "yaml"
+  }
 }
