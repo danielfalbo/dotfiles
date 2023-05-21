@@ -55,10 +55,7 @@
   ],
 
   "window.autoDetectColorScheme": true,
-  "workbench.preferredDarkColorTheme": "Atom One Dark",
-  "workbench.preferredLightColorTheme": "Atom One Light",
 
-  "workbench.colorTheme": "Atom One Light",
   "workbench.iconTheme": "material-icon-theme",
 
   "workbench.sideBar.location": "right",
