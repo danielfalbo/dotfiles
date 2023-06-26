@@ -48,9 +48,6 @@
     - command: open -a Shottr
       description: Activating Shottr
 
-    - command: open -a Spaceman
-      description: Activating Spaceman
-
     - command: skhd --restart-service || skhd --start-service
       description: Acivating skhd
 
