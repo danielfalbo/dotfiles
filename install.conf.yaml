@@ -36,18 +36,6 @@
     - ~/Developer
 
 - shell:
-    - command: open -a Rectangle
-      description: Activating Rectangle
-
-    - command: open -a Karabiner-Elements
-      description: Activating Karabiner
-
-    - command: open -a DeepL
-      description: Activating DeepL
-
-    - command: open -a Shottr
-      description: Activating Shottr
-
     - command: skhd --restart-service || skhd --start-service
       description: Acivating skhd
 
