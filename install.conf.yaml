@@ -20,6 +20,9 @@
     - command: defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
       description: Enabling key-repeating in VSCode
 
+    - command: touch ~/.hushlogin
+      description: Creating ~/.hushlogin to mute last login as MOTD
+
 - clean: ["~"]
 
 - link:
