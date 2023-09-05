@@ -2,4 +2,4 @@
 cmd + alt - n: osascript -e 'tell application "Safari" to make new document' -e 'tell application "Safari" to activate' && skhd -k "ctrl + alt - return"
 
 # global shortcut to write a new note
-cmd - return: skhd -k "fn - q"
+ctrl - return: skhd -k "fn - q"
