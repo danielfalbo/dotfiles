@@ -33,5 +33,6 @@ mas "AdGuard for Safari", id: 1440147259
 mas "Grammarly for Safari", id: 1462114288
 mas "JSONPeep", id: 1458969831
 mas "Keepa - Price Tracker", id: 1533805339
+mas "Kindle", id: 302584613
 mas "Vimari", id: 1480933944
 # mas "Xcode", id: 497799835
