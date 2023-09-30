@@ -105,6 +105,7 @@ function! ToggleFocusMode()
 endfunction
 
 nnoremap <silent> <leader>z :call ToggleFocusMode()<cr>
+
 " setup disabled focus mode settings when starting vim
 call DisableFocusMode()
 
