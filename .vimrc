@@ -56,6 +56,8 @@ endfunction
 
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
+autocmd bufreadpre *.txt setlocal textwidth=80
+
 if !isdirectory($HOME."/.vim")
     call mkdir($HOME."/.vim", "", 0770)
 endif
@@ -103,7 +105,6 @@ function! ToggleFocusMode()
 endfunction
 
 nnoremap <silent> <leader>z :call ToggleFocusMode()<cr>
-
 " setup disabled focus mode settings when starting vim
 call DisableFocusMode()
 
