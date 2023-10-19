@@ -32,6 +32,7 @@
       "commands": ["editor.action.rename"],
       "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
     },
+
     {
       "before": ["<leader>", "n"],
       "commands": ["editor.action.marker.next"],
@@ -42,8 +43,14 @@
       "commands": ["editor.action.marker.prev"],
       "when": ["editorFocus"]
     },
+
     { "before": ["u"], "commands": ["undo"] },
-    { "before": ["c-r"], "commands": ["redo"] }
+    { "before": ["c-r"], "commands": ["redo"] },
+
+    { "before": ["c-h"], "commands": ["workbench.action.navigateLeft"] },
+    { "before": ["c-l"], "commands": ["workbench.action.navigateRight"] },
+    { "before": ["c-k"], "commands": ["workbench.action.navigateUp"] },
+    { "before": ["c-j"], "commands": ["workbench.action.navigateDown"] }
   ],
 
   "vim.visualModeKeyBindingsNonRecursive": [
