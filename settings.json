@@ -78,7 +78,6 @@
   "[java]": { "editor.defaultFormatter": "redhat.java" },
 
   "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
-  "python.formatting.provider": "none",
 
   "[markdown]": {
     "editor.quickSuggestions": {
