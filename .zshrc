@@ -46,3 +46,5 @@ alias dfu='bubu && brew cleanup -s && ~/.dotfiles/install.sh'
 
 export BAT_THEME=ansi
 export SCCACHE_CACHE_SIZE="50G"
+
+export PATH=$(brew --prefix)/opt/ruby/bin:$(brew --prefix)/lib/ruby/gems/3.0.0/bin:$PATH
