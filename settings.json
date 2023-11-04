@@ -70,7 +70,6 @@
   "breadcrumbs.enabled": false,
   "editor.minimap.enabled": false,
   "git.confirmSync": false,
-  "workbench.activityBar.visible": false,
   "window.commandCenter": false,
   "workbench.editor.tabCloseButton": "off",
   "workbench.startupEditor": "none",
