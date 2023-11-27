@@ -67,10 +67,6 @@ endif
 set undodir=~/.vim/undo-dir
 set undofile
 
-if !argc()
-    silent! edit /var/tmp/tmp.py
-endif
-
 colorscheme habamax
 hi Normal ctermbg=NONE
 
