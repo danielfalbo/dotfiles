@@ -85,6 +85,10 @@
 
   "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
 
+  "[swift]": {
+    "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
+  },
+
   "[markdown]": {
     "editor.quickSuggestions": {
       "other": "on",
