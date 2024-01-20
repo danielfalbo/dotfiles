@@ -79,16 +79,15 @@
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
+  "C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++-13 ",
+
   "[cpp]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
 
   "[java]": { "editor.defaultFormatter": "redhat.java" },
 
   "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
 
-  "[swift]": {
-    "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
-  },
-
+  "[swift]": { "editor.defaultFormatter": "vknabel.vscode-apple-swift-format" },
   "[markdown]": {
     "editor.quickSuggestions": {
       "other": "on",
@@ -97,9 +96,7 @@
     }
   },
 
-  "workbench.editorAssociations": {
-    "*.pdf": "latex-workshop-pdf-hook"
-  },
+  "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
 
   "[latex]": { "editor.formatOnSave": false },
 
@@ -124,7 +121,11 @@
 
   "css.lint.unknownAtRules": "ignore",
 
-  "files.associations": {
-    ".skhdrc": "yaml"
-  }
+  "files.associations": { ".skhdrc": "yaml" },
+
+  "workbench.editor.tabActionCloseVisibility": false,
+
+  "liveshare.allowGuestDebugControl": true,
+  "liveshare.allowGuestTaskControl": true,
+  "liveshare.languages.allowGuestCommandControl": true
 }
