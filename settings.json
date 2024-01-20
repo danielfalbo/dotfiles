@@ -1,19 +1,10 @@
 {
-  "editor.fontFamily": "'VictorMono Nerd Font', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-
   "editor.formatOnSave": true,
+  "editor.formatOnType": true,
 
-  "editor.renderWhitespace": "trailing",
-
-  "editor.wordWrap": "on",
-
-  "editor.linkedEditing": true,
-
-  "git.autofetch": true,
+  "git.autofetch": "all",
 
   "vim.easymotion": true,
-  "vim.sneak": true,
 
   "vim.useSystemClipboard": true,
 
@@ -65,65 +56,29 @@
 
   "workbench.iconTheme": "material-icon-theme",
 
-  "workbench.sideBar.location": "right",
-
   "breadcrumbs.enabled": false,
   "editor.minimap.enabled": false,
+  "workbench.editor.tabActionCloseVisibility": false,
   "git.confirmSync": false,
-  "window.commandCenter": false,
-  "workbench.editor.tabCloseButton": "off",
   "workbench.startupEditor": "none",
 
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
 
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-
   "C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++-13 ",
 
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[cpp]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
-
   "[java]": { "editor.defaultFormatter": "redhat.java" },
-
   "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
-
   "[swift]": { "editor.defaultFormatter": "vknabel.vscode-apple-swift-format" },
-  "[markdown]": {
-    "editor.quickSuggestions": {
-      "other": "on",
-      "comments": "off",
-      "strings": "off"
-    }
-  },
 
   "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
 
   "[latex]": { "editor.formatOnSave": false },
 
-  "latex-workshop.view.pdf.viewer": "tab",
-
   "terminal.integrated.scrollback": 999999,
   "terminal.integrated.persistentSessionScrollback": 999999,
-
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
-  "editor.accessibilitySupport": "off",
-  "editor.unicodeHighlight.nonBasicASCII": false,
-
-  "editor.suggest.snippetsPreventQuickSuggestions": false,
-
-  "editor.inlineSuggest.enabled": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "java.debug.settings.vmArgs": "-ea",
-
-  "editor.formatOnType": true,
-
-  "css.lint.unknownAtRules": "ignore",
-
-  "files.associations": { ".skhdrc": "yaml" },
-
-  "workbench.editor.tabActionCloseVisibility": false,
 
   "liveshare.allowGuestDebugControl": true,
   "liveshare.allowGuestTaskControl": true,

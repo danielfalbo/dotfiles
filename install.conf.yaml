@@ -20,30 +20,14 @@
     - command: defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
       description: Enabling key-repeating in VSCode
 
-    - command: touch ~/.hushlogin
-      description: Creating ~/.hushlogin to mute last login as MOTD
-
 - clean: ["~"]
 
 - link:
     ~/.config/karabiner/karabiner.json: karabiner.json
     ~/.gitconfig: .gitconfig
-    ~/.gitignore: .global.gitignore
-    ~/.skhdrc: .skhdrc
-    ~/.tmux.conf: .tmux.conf
     ~/.vimrc: .vimrc
     ~/.zshrc: .zshrc
     ~/Library/Application Support/Code/User/settings.json: settings.json
 
 - create:
     - ~/Developer
-
-- shell:
-    - command: skhd --restart-service || skhd --start-service
-      description: Acivating skhd
-
-    - command: defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles"
-      description: Setting iTerm preferences directory
-
-    - command: defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
-      description: Telling iTerm2 to use the custom preferences in the directory
