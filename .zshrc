@@ -1,7 +1,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export CLICOLOR=1
-PROMPT='%F{240}%n:%F{141}%~%(?.%F{white}.%F{red}) $ %F{reset}'
+PROMPT='%F{240}%n%F{reset}:%F{141}%~%(?.%F{reset}.%F{red}) $ %F{reset}'
 
 homebrew_plugins=(autosuggestions syntax-highlighting)
 
