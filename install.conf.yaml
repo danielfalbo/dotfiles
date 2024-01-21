@@ -5,9 +5,6 @@
       force: true
 
 - shell:
-    - command: test -d ~/.oh-my-zsh || sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-      description: Installing ohmyzsh
-
     - command: which brew || bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       description: Installing homebrew
       stdout: true

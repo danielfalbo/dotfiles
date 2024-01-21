@@ -1,19 +1,11 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-KEYTIMEOUT=1
-VI_MODE_SET_CURSOR=true
-ZSH_THEME="robbyrussell"
+export CLICOLOR=1
+PROMPT='%F{240}%n:%F{141}%~%(?.%F{white}.%F{red}) $ %F{reset}'
 
-plugins=(colored-man-pages vi-mode)
-
-source ~/.oh-my-zsh/oh-my-zsh.sh
-
-homebrew_plugins=(
-    autosuggestions
-    syntax-highlighting
-)
+homebrew_plugins=(autosuggestions syntax-highlighting)
 
 for plugin in ${homebrew_plugins}
-    source $(brew --prefix)/share/zsh-${plugin}/zsh-${plugin}.zsh
+    source ${HOMEBREW_PREFIX}/share/zsh-${plugin}/zsh-${plugin}.zsh
 
 alias rm='trash -F'
