@@ -3,6 +3,7 @@
   "editor.formatOnType": true,
 
   "git.autofetch": "all",
+  "git.confirmSync": false,
 
   "vim.easymotion": true,
 
@@ -56,11 +57,18 @@
 
   "workbench.iconTheme": "material-icon-theme",
 
-  "breadcrumbs.enabled": false,
-  "editor.minimap.enabled": false,
-  "workbench.editor.tabActionCloseVisibility": false,
-  "git.confirmSync": false,
   "workbench.startupEditor": "none",
+  "workbench.editor.tabActionCloseVisibility": false,
+  "zenMode.showTabs": "none",
+  "zenMode.fullScreen": false,
+  "zenMode.centerLayout": false,
+  "editor.minimap.enabled": false,
+  "window.commandCenter": false,
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "breadcrumbs.enabled": false,
+  "editor.showFoldingControls": "never",
+  "editor.glyphMargin": false,
 
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
