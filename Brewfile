@@ -4,7 +4,6 @@ brew "trash"
 
 cask "arc"
 cask "deepl"
-cask "google-drive"
 cask "karabiner-elements"
 cask "rectangle"
 cask "shottr"
