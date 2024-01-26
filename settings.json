@@ -2,6 +2,8 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
 
+  "editor.wordWrap": "bounded",
+
   "git.autofetch": "all",
   "git.confirmSync": false,
 
@@ -57,7 +59,13 @@
 
   "workbench.iconTheme": "material-icon-theme",
 
-  "workbench.startupEditor": "none",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.startupEditor": "newUntitledFile",
+  "files.defaultLanguage": "text",
+
   "workbench.editor.tabActionCloseVisibility": false,
   "zenMode.showTabs": "none",
   "zenMode.fullScreen": false,
