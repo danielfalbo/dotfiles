@@ -73,8 +73,6 @@
   "editor.minimap.enabled": false,
   "window.commandCenter": false,
   "editor.scrollbar.horizontalScrollbarSize": 0,
-  "editor.scrollbar.verticalScrollbarSize": 5,
-  "breadcrumbs.enabled": false,
   "editor.showFoldingControls": "never",
   "editor.glyphMargin": false,
 
