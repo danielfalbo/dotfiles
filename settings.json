@@ -86,7 +86,9 @@
   "[java]": { "editor.defaultFormatter": "redhat.java" },
   "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
   "[swift]": { "editor.defaultFormatter": "vknabel.vscode-apple-swift-format" },
-  "[r]": { "editor.defaultFormatter": "REditorSupport.r" },
+  "[r]": { "editor.defaultFormatter": "REditorSupport.r", "editor.tabSize": 2 },
+
+  "r.plot.useHttpgd": true,
 
   "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
 
@@ -97,6 +99,5 @@
 
   "liveshare.allowGuestDebugControl": true,
   "liveshare.allowGuestTaskControl": true,
-  "liveshare.languages.allowGuestCommandControl": true,
-  "workbench.colorTheme": "Default Dark Modern"
+  "liveshare.languages.allowGuestCommandControl": true
 }
