@@ -8,6 +8,11 @@
   "git.confirmSync": false,
 
   "vim.easymotion": true,
+  "vim.camelCaseMotion.enable": true,
+  "vim.highlightedyank.enable": true,
+  "vim.sneak": true,
+
+  "vimFindHighlight.enableUnderline": false,
 
   "vim.useSystemClipboard": true,
 
@@ -55,7 +60,7 @@
     { "before": [">"], "after": [">", "g", "v"] }
   ],
 
-  "window.autoDetectColorScheme": true,
+  // "window.autoDetectColorScheme": true,
 
   "workbench.iconTheme": "material-icon-theme",
 
@@ -74,7 +79,7 @@
   "window.commandCenter": false,
   "editor.scrollbar.horizontalScrollbarSize": 0,
   "editor.showFoldingControls": "never",
-  "editor.glyphMargin": false,
+  // "editor.glyphMargin": false,
 
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -87,6 +92,8 @@
   "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
   "[swift]": { "editor.defaultFormatter": "vknabel.vscode-apple-swift-format" },
   "[r]": { "editor.defaultFormatter": "REditorSupport.r", "editor.tabSize": 2 },
+  "[c]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
+  "[sql]": { "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode" },
 
   "r.plot.useHttpgd": true,
 
@@ -99,5 +106,12 @@
 
   "liveshare.allowGuestDebugControl": true,
   "liveshare.allowGuestTaskControl": true,
-  "liveshare.languages.allowGuestCommandControl": true
+  "liveshare.languages.allowGuestCommandControl": true,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  }
 }
