@@ -8,7 +8,7 @@ homebrew_plugins=(autosuggestions syntax-highlighting)
 for plugin in ${homebrew_plugins}
     source ${HOMEBREW_PREFIX}/share/zsh-${plugin}/zsh-${plugin}.zsh
 
-alias rm='trash -F'
+alias rm='trash'
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
