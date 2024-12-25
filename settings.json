@@ -68,10 +68,11 @@
   "editor.cursorSmoothCaretAnimation": "on",
 
   "workbench.editor.empty.hint": "hidden",
-  "workbench.startupEditor": "newUntitledFile",
+
   "files.defaultLanguage": "text",
 
   "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.activityBar.orientation": "horizontal",
   "zenMode.showTabs": "none",
   "zenMode.fullScreen": false,
   "zenMode.centerLayout": false,
@@ -110,8 +111,22 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
     "*": true,
-    "plaintext": false,
-    "markdown": true,
-    "scminput": false
-  }
+    "plaintext": true,
+    "markdown": true
+  },
+
+  "typescript.preferences.useAliasesForRenames": false,
+
+  "diffEditor.maxComputationTime": 0,
+  "cssVariables.lookupFiles": [
+    "**/*.css",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.less",
+    "node_modules/@mantine/core/styles.css"
+  ],
+  "go.toolsManagement.autoUpdate": true,
+  "haskell.manageHLS": "GHCup",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "diffEditor.ignoreTrimWhitespace": false
 }
