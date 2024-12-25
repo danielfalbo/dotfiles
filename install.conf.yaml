@@ -23,7 +23,7 @@
     ~/.config/karabiner/karabiner.json: karabiner.json
     ~/.gitconfig: .gitconfig
     ~/.zshrc: .zshrc
-    ~/Library/Application Support/Code/User/settings.json: settings.json
+    ~/Library/Application Support/Cursor/User/settings.json: settings.json
 
 - create:
     - ~/Developer
