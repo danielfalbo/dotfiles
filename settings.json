@@ -60,27 +60,17 @@
     { "before": [">"], "after": [">", "g", "v"] }
   ],
 
-  // "window.autoDetectColorScheme": true,
-
   "workbench.iconTheme": "material-icon-theme",
 
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
 
-  "workbench.editor.empty.hint": "hidden",
-
-  "files.defaultLanguage": "text",
+  "files.defaultLanguage": "markdown",
 
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.activityBar.orientation": "horizontal",
-  "zenMode.showTabs": "none",
-  "zenMode.fullScreen": false,
-  "zenMode.centerLayout": false,
-  "editor.minimap.enabled": false,
-  "window.commandCenter": false,
   "editor.scrollbar.horizontalScrollbarSize": 0,
   "editor.showFoldingControls": "never",
-  // "editor.glyphMargin": false,
 
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -88,45 +78,16 @@
   "C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++-13 ",
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[c]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
   "[cpp]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
   "[java]": { "editor.defaultFormatter": "redhat.java" },
   "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
   "[swift]": { "editor.defaultFormatter": "vknabel.vscode-apple-swift-format" },
-  "[r]": { "editor.defaultFormatter": "REditorSupport.r", "editor.tabSize": 2 },
-  "[c]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
-  "[sql]": { "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode" },
-
-  "r.plot.useHttpgd": true,
 
   "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
-
-  "[latex]": { "editor.formatOnSave": false },
 
   "terminal.integrated.scrollback": 999999,
   "terminal.integrated.persistentSessionScrollback": 999999,
 
-  "liveshare.allowGuestDebugControl": true,
-  "liveshare.allowGuestTaskControl": true,
-  "liveshare.languages.allowGuestCommandControl": true,
-  "github.copilot.editor.enableAutoCompletions": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": true
-  },
-
-  "typescript.preferences.useAliasesForRenames": false,
-
-  "diffEditor.maxComputationTime": 0,
-  "cssVariables.lookupFiles": [
-    "**/*.css",
-    "**/*.scss",
-    "**/*.sass",
-    "**/*.less",
-    "node_modules/@mantine/core/styles.css"
-  ],
-  "go.toolsManagement.autoUpdate": true,
-  "haskell.manageHLS": "GHCup",
-  "editor.unicodeHighlight.ambiguousCharacters": false,
-  "diffEditor.ignoreTrimWhitespace": false
+  "typescript.preferences.useAliasesForRenames": false
 }
