@@ -62,7 +62,7 @@
 
   "workbench.iconTheme": "material-icon-theme",
 
-  "editor.cursorBlinking": "phase",
+  "editor.cursorBlinking": "solid",
   "editor.cursorSmoothCaretAnimation": "on",
 
   "files.defaultLanguage": "markdown",
