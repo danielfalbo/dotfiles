@@ -66,10 +66,10 @@
   "editor.cursorSmoothCaretAnimation": "on",
 
   "files.defaultLanguage": "markdown",
-
-  "workbench.editor.tabActionCloseVisibility": false,
-  "workbench.activityBar.orientation": "horizontal",
-  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "window.density.editorTabHeight": "compact",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "breadcrumbs.enabled": false,
   "editor.showFoldingControls": "never",
 
   "javascript.updateImportsOnFileMove.enabled": "always",
