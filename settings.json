@@ -70,6 +70,7 @@
   "workbench.layoutControl.enabled": false,
   "window.commandCenter": false,
   "breadcrumbs.enabled": false,
+  "workbench.statusBar.visible": false,
   "editor.showFoldingControls": "never",
 
   "javascript.updateImportsOnFileMove.enabled": "always",
