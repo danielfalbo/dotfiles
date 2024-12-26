@@ -91,5 +91,7 @@
   "terminal.integrated.scrollback": 999999,
   "terminal.integrated.persistentSessionScrollback": 999999,
 
-  "typescript.preferences.useAliasesForRenames": false
+  "typescript.preferences.useAliasesForRenames": false,
+
+  "terminal.integrated.showExitAlert": false
 }
