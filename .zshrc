@@ -1,7 +1,10 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export CLICOLOR=1
-PROMPT='%F{240}%n%F{reset}:%F{141}%~%(?.%F{reset}.%F{red}) $ %F{reset}'
+
+function parse_git_branch() { git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p' }
+setopt PROMPT_SUBST
+PROMPT='%F{240}%n%F{reset} %F{141}%~%(?.%F{reset}.%F{red}) %F{green}$(parse_git_branch)%F{reset} $ %F{reset}'
 
 homebrew_plugins=(autosuggestions syntax-highlighting)
 
