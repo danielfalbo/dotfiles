@@ -17,3 +17,5 @@ alias c="cursor"
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
+
+autoload -Uz compinit && compinit
