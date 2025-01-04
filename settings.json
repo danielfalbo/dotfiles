@@ -12,8 +12,6 @@
   "vim.highlightedyank.enable": true,
   "vim.sneak": true,
 
-  "vimFindHighlight.enableUnderline": false,
-
   "vim.useSystemClipboard": true,
 
   "vim.leader": "<space>",
@@ -25,6 +23,11 @@
     { "before": ["Q"], "after": ["@", "q"] },
 
     { "before": ["Y"], "after": ["y", "$"] },
+
+    {
+      "before": ["w"],
+      "after": ["<leader>", "<leader>", "w"]
+    },
 
     {
       "before": ["<leader>", "r", "n"],
