@@ -87,6 +87,7 @@
   "[swift]": { "editor.defaultFormatter": "vknabel.vscode-apple-swift-format" },
 
   "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
+  "files.associations": { ".cursorrules": "plaintext" },
 
   "terminal.integrated.scrollback": 999999,
   "terminal.integrated.persistentSessionScrollback": 999999,
