@@ -25,11 +25,6 @@
     { "before": ["Y"], "after": ["y", "$"] },
 
     {
-      "before": ["w"],
-      "after": ["<leader>", "<leader>", "w"]
-    },
-
-    {
       "before": ["<leader>", "r", "n"],
       "commands": ["editor.action.rename"],
       "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
