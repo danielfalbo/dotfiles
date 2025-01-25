@@ -71,6 +71,9 @@
   "workbench.statusBar.visible": false,
   "editor.showFoldingControls": "never",
   "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.tabActionCloseVisibility": false,
 
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -93,5 +96,5 @@
   "typescript.preferences.useAliasesForRenames": false,
 
   "terminal.integrated.showExitAlert": false,
-  "workbench.colorTheme": "GitHub Dark Dimmed"
+  "workbench.colorTheme": "Xcode Classic (Dark)"
 }
