@@ -57,7 +57,11 @@
     { "before": ["k"], "after": ["g", "k"] },
 
     { "before": ["<"], "after": ["<", "g", "v"] },
-    { "before": [">"], "after": [">", "g", "v"] }
+    { "before": ["<TAB>"], "after": [">", "g", "v"] },
+
+    { "before": [">"], "after": [">", "g", "v"] },
+    { "before": ["<S-TAB>"], "after": ["<", "g", "v"] },
+    { "before": ["q"], "after": ["<", "g", "v"] }
   ],
 
   "workbench.iconTheme": "material-icon-theme",
