@@ -24,6 +24,8 @@
 
     { "before": ["Y"], "after": ["y", "$"] },
 
+    { "before": ["4"], "after": ["$"] },
+
     {
       "before": ["<leader>", "r", "n"],
       "commands": ["editor.action.rename"],
