@@ -22,6 +22,7 @@
 - link:
     ~/.config/karabiner/karabiner.json: karabiner.json
     ~/.gitconfig: .gitconfig
+    ~/.vimrc: .vimrc
     ~/.zshrc: .zshrc
     ~/Library/Application Support/Cursor/User/settings.json: settings.json
 
