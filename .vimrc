@@ -3,7 +3,6 @@ syntax on
 set background=dark
 
 map 4 $
-nnoremap yy 0y$
 vmap q <gv
 vmap <TAB> >gv
 vmap < <gv
