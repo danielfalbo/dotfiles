@@ -13,7 +13,8 @@ for plugin in ${homebrew_plugins}
     source ${HOMEBREW_PREFIX}/share/zsh-${plugin}/zsh-${plugin}.zsh
 
 alias rm='trash'
-alias c="cursor"
+alias c='cursor'
+alias j='vi $(date -u +%Y-%m-%d).md'
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
