@@ -11,6 +11,8 @@ vmap > >gv
 nmap j gj
 nmap k gk
 
+nmap Y y$
+
 set softtabstop=4
 set shiftwidth=4
 set expandtab
