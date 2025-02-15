@@ -14,7 +14,7 @@ for plugin in ${homebrew_plugins}
 
 alias rm='trash'
 alias c='cursor'
-alias j='vi $(date -u +%Y-%m-%d).md'
+alias j='vi $(echo $JOURNAL_DIR)/$(date -u +%Y-%m-%d).md'
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
