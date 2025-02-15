@@ -15,7 +15,7 @@ for plugin in ${homebrew_plugins}
 alias rm='trash'
 alias c='cursor'
 
-alias j='cd $(echo $JOURNAL_DIR) && vim $(date -u +%Y-%m-%d).md'
+alias j='cd $(echo $JOURNAL_DIR) && vim $(date -u +%Y-%m-%d).md && gcp'
 
 alias gsp='echo $(git status -s --porcelain)'
 alias gcp='git pull && git add . && git commit -m "$(gsp)" && git push'
