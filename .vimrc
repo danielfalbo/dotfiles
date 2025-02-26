@@ -61,3 +61,43 @@ highlight CursorLineNr ctermfg=yellow ctermbg=NONE " Highlight current line numb
 set cursorline                                " Highlight the current line
 highlight CursorLine cterm=NONE ctermbg=234   " Dark grey background
 highlight CursorLineNr cterm=NONE             " Remove underline from current line number
+
+set showtabline=2                              " Always show tab bar
+highlight TabLineSel ctermfg=yellow ctermbg=236
+
+nnoremap <TAB> :tabnext<CR>
+nnoremap <S-TAB> :tabprevious<CR>
+
+" Make :e open in new tab
+cabbrev e tabe
+" Provide :E as an alternative to preserve original :e behavior
+cabbrev E e
+
+function! MyTabLine()
+    let s = ''
+    for i in range(tabpagenr('$'))
+        " select the highlighting
+        if i + 1 == tabpagenr()
+            let s .= '%#TabLineSel#'
+        else
+            let s .= '%#TabLine#'
+        endif
+
+        " set the tab page number (for mouse clicks)
+        let s .= '%' . (i + 1) . 'T'
+
+        " the label is made by MyTabLabel()
+        let s .= ' ' . (i + 1) . ':' . '%{MyTabLabel(' . (i + 1) . ')} '
+    endfor
+
+    " after the last tab fill with TabLineFill and reset tab page nr
+    let s .= '%#TabLineFill#%T'
+    return s
+endfunction
+
+function! MyTabLabel(n)
+    let buflist = tabpagebuflist(a:n)
+    let winnr = tabpagewinnr(a:n)
+    let name = bufname(buflist[winnr - 1])
+    return fnamemodify(name, ':t') != '' ? fnamemodify(name, ':t') : '[No Name]'
+endfunction
