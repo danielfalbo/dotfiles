@@ -101,3 +101,8 @@ function! MyTabLabel(n)
     let name = bufname(buflist[winnr - 1])
     return fnamemodify(name, ':t') != '' ? fnamemodify(name, ':t') : '[No Name]'
 endfunction
+
+" Cool Cursor Shape in Insert Mode
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+set ttimeoutlen=1
