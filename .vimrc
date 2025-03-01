@@ -22,7 +22,6 @@ set ignorecase		" ignore the case
 set smartcase		" don't ignore the case if the pattern is uppercase
 set laststatus=2	" show the status bar even with one buffer
 set ruler		" show cursor position
-set showmode		" show the current mode
 set autoindent
 set backspace=2
 
@@ -102,7 +101,8 @@ function! MyTabLabel(n)
     return fnamemodify(name, ':t') != '' ? fnamemodify(name, ':t') : '[No Name]'
 endfunction
 
-" Cool Cursor Shape in Insert Mode
+" use cursor shape as mode indicator
+set noshowmode
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 set ttimeoutlen=1
