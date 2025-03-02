@@ -19,7 +19,7 @@ alias gsp='echo $(git status -s --porcelain)'
 alias gcp='git pull && git add . && git commit -m "$(gsp)" && git push'
 
 # quick journaling shortcut
-alias j='cd $(echo $JOURNAL_DIR) && vim -c "Goyo" -c "normal G" -c "normal! zt" -c "startinsert" $(date -u +%Y-%m-%d).md && gcp'
+alias j='cd $(echo $JOURNAL_DIR) && vim -c "Goyo" -c "normal G" -c "normal o" -c "normal! zt" -c "startinsert" $(date -u +%Y-%m-%d).md && gcp'
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
