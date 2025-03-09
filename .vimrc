@@ -123,3 +123,9 @@ function! ToggleNetrw()
     endif
 endfunction
 nnoremap <C-e> :call ToggleNetrw()<CR>
+
+" window navigation with ctrl + hjkl
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-l> :wincmd l<CR>
