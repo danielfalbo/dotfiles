@@ -106,3 +106,20 @@ set noshowmode
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 set ttimeoutlen=1
+
+" netrw
+let g:netrw_liststyle = 3                       " tree-like listing
+let g:netrw_banner = 0                          " hide banner at the top
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'  " show hidden files
+let g:netrw_winsize = 20                        " vertical split window width
+let g:netrw_browse_split = 4                    " open files in vertical split
+function! ToggleNetrw()
+    if exists("t:netrw_buf") && bufwinnr(t:netrw_buf) != -1
+        exec bufwinnr(t:netrw_buf) . 'wincmd q'
+        unlet t:netrw_buf
+    else
+        :Vex
+        let t:netrw_buf = bufnr('%')
+    endif
+endfunction
+nnoremap <C-e> :call ToggleNetrw()<CR>
