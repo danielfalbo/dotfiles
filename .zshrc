@@ -18,8 +18,36 @@ alias c='cursor'
 alias gsp='echo $(git status -s --porcelain)'
 alias gcp='git pull && git add . && git commit -m "$(gsp)" && git push'
 
-# quick journaling shortcut
-alias j='cd $(echo $JOURNAL_DIR) && vim -c "Goyo" -c "normal G" -c "normal o" -c "normal! zt" -c "startinsert" $(date +%Y-%m-%d).md && gcp'
+# git journaling
+function j() {
+    if [ -z "$JOURNAL_DIR" ]; then
+        echo "Error: JOURNAL_DIR environment variable is not set"
+        return 1
+    fi
+
+    cd $JOURNAL_DIR
+    TMPFILE=".tmp_entry"
+
+    vim -c "Goyo" -c "normal G" -c "normal! zt" -c "startinsert" "$TMPFILE"
+
+    if [ -s "$TMPFILE" ]; then
+        git add "$TMPFILE"
+        git commit -m "$(cat "$TMPFILE")" --date="$(date -R)"
+    fi
+
+    rm "$TMPFILE"
+}
+
+function jlog() {
+    if [ -z "$JOURNAL_DIR" ]; then
+        echo "Error: JOURNAL_DIR environment variable is not set"
+        return 1
+    fi
+
+    cd $JOURNAL_DIR
+    git log --pretty=format:"%C(240)%ad%Creset%n%s%n%n%b" --date=format:"%Y-%m-%d %I:%M:%S%p"
+
+}
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
