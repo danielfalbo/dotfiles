@@ -102,5 +102,6 @@
   "typescript.preferences.useAliasesForRenames": false,
 
   "terminal.integrated.showExitAlert": false,
-  "workbench.colorTheme": "Anysphere"
+  "update.releaseTrack": "prerelease",
+  "workbench.colorTheme": "Atom One Dark"
 }
