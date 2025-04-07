@@ -1,5 +1,5 @@
 [user]
-  name = Daniel Falbo
+  name = Daniel
   email = 39460524+danielfalbo@users.noreply.github.com
 
 [github]
@@ -7,8 +7,3 @@
 
 [init]
   defaultBranch = main
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
