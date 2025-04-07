@@ -29,6 +29,11 @@ alias glog='git log --pretty=format:"%C(240)%ad%Creset %s%n%b" --date=format:"%Y
 alias gsp='echo $(git status -s --porcelain)'
 alias gcp='git pull && git add . && git commit -m "$(gsp)" && git push'
 
+alias gd='git diff'
+alias gp='git push'
+
+alias vt='vim $(date -u +%Y-%m-%d).md'
+
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
 
