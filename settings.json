@@ -90,6 +90,7 @@
   "[c]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
   "[cpp]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
   "[java]": { "editor.defaultFormatter": "redhat.java" },
+  "[prisma]": { "editor.defaultFormatter": "Prisma.prisma" },
   "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
   "[swift]": { "editor.defaultFormatter": "vknabel.vscode-apple-swift-format" },
 
