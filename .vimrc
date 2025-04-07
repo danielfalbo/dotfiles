@@ -24,6 +24,7 @@ set laststatus=2	" show the status bar even with one buffer
 set ruler		" show cursor position
 set autoindent
 set backspace=2
+set breakindent         " every wrapped line will continue visually indented
 
 " When open a new file remember the cursor position of the last editing
 if has("autocmd")
