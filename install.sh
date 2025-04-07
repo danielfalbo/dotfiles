@@ -1,18 +1,29 @@
 #! /usr/bin/env bash
 
-set -e
-
-CONFIG="install.conf.yaml"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
 cd "${BASEDIR}"
 
-python3 -m venv .venv
-source .venv/bin/activate
+which brew || bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+/opt/homebrew/bin/brew bundle
 
-dotbot -d "${BASEDIR}" -c "${CONFIG}" $@
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
-deactivate
+mkdir -p ~/Developer
+
+mkdir -p ~/.config
+mkdir -p ~/.config/karabiner
+mkdir -p ~/Library/Application\ Support/Cursor/User
+
+/bin/rm -f ~/.config/karabiner/karabiner.json
+/bin/rm -f ~/.gitconfig
+/bin/rm -f ~/.vimrc
+/bin/rm -f ~/.zshrc
+/bin/rm -f ~/Library/Application\ Support/Cursor/User/settings.json
+
+# create symlinks
+ln -sf "${BASEDIR}/karabiner.json" ~/.config/karabiner/karabiner.json
+ln -sf "${BASEDIR}/.gitconfig" ~/.gitconfig
+ln -sf "${BASEDIR}/.vimrc" ~/.vimrc
+ln -sf "${BASEDIR}/.zshrc" ~/.zshrc
+ln -sf "${BASEDIR}/settings.json" ~/Library/Application\ Support/Cursor/User/settings.json
