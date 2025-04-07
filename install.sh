@@ -23,7 +23,7 @@ mkdir -p ~/Library/Application\ Support/Cursor/User
 
 # create symlinks
 ln -sf "${BASEDIR}/karabiner.json" ~/.config/karabiner/karabiner.json
-ln -sf "${BASEDIR}/.gitconfig" ~/.gitconfig
+# ln -sf "${BASEDIR}/.gitconfig" ~/.gitconfig
 ln -sf "${BASEDIR}/.vimrc" ~/.vimrc
 ln -sf "${BASEDIR}/.zshrc" ~/.zshrc
 ln -sf "${BASEDIR}/settings.json" ~/Library/Application\ Support/Cursor/User/settings.json
