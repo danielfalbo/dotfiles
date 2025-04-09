@@ -1,30 +1,18 @@
 {
   "editor.formatOnSave": true,
-  "editor.formatOnType": true,
 
-  "editor.wordWrap": "on",
-
-  "git.autofetch": "all",
   "git.confirmSync": false,
 
-  "vim.easymotion": true,
-  "vim.camelCaseMotion.enable": true,
   "vim.highlightedyank.enable": true,
-  "vim.sneak": true,
 
   "vim.useSystemClipboard": true,
 
   "vim.leader": "<space>",
 
   "vim.normalModeKeyBindingsNonRecursive": [
-    { "before": ["j"], "after": ["g", "j"] },
-    { "before": ["k"], "after": ["g", "k"] },
-
     { "before": ["Q"], "after": ["@", "q"] },
 
     { "before": ["Y"], "after": ["y", "$"] },
-
-    { "before": ["4"], "after": ["$"] },
 
     {
       "before": ["<leader>", "r", "n"],
@@ -43,25 +31,10 @@
       "when": ["editorFocus"]
     },
 
-    { "before": ["u"], "commands": ["undo"] },
-    { "before": ["c-r"], "commands": ["redo"] },
-
     { "before": ["c-h"], "commands": ["workbench.action.navigateLeft"] },
     { "before": ["c-l"], "commands": ["workbench.action.navigateRight"] },
     { "before": ["c-k"], "commands": ["workbench.action.navigateUp"] },
     { "before": ["c-j"], "commands": ["workbench.action.navigateDown"] }
-  ],
-
-  "vim.visualModeKeyBindingsNonRecursive": [
-    { "before": ["j"], "after": ["g", "j"] },
-    { "before": ["k"], "after": ["g", "k"] },
-
-    { "before": ["<"], "after": ["<", "g", "v"] },
-    { "before": ["<TAB>"], "after": [">", "g", "v"] },
-
-    { "before": [">"], "after": [">", "g", "v"] },
-    { "before": ["<S-TAB>"], "after": ["<", "g", "v"] },
-    { "before": ["q"], "after": ["<", "g", "v"] }
   ],
 
   "workbench.iconTheme": "material-icon-theme",
@@ -69,7 +42,6 @@
   "editor.cursorBlinking": "solid",
   "editor.cursorSmoothCaretAnimation": "on",
 
-  "files.defaultLanguage": "markdown",
   "window.density.editorTabHeight": "compact",
   "workbench.layoutControl.enabled": false,
   "window.commandCenter": false,
@@ -84,25 +56,15 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
 
-  "C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++-13 ",
-
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[c]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
-  "[cpp]": { "editor.defaultFormatter": "ms-vscode.cpptools" },
-  "[java]": { "editor.defaultFormatter": "redhat.java" },
-  "[prisma]": { "editor.defaultFormatter": "Prisma.prisma" },
   "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
-  "[swift]": { "editor.defaultFormatter": "vknabel.vscode-apple-swift-format" },
 
   "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
-  "files.associations": { ".cursorrules": "plaintext" },
 
   "terminal.integrated.scrollback": 999999,
   "terminal.integrated.persistentSessionScrollback": 999999,
 
   "typescript.preferences.useAliasesForRenames": false,
 
-  "terminal.integrated.showExitAlert": false,
-  "update.releaseTrack": "prerelease",
-  "workbench.colorTheme": "Atom One Dark"
+  "terminal.integrated.showExitAlert": false
 }
