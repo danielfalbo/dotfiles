@@ -2,14 +2,9 @@ syntax sync fromstart
 syntax on
 set background=dark
 
-map 4 $
-vmap q <gv
-vmap <TAB> >gv
 vmap < <gv
 vmap > >gv
 
-nmap j gj
-nmap k gk
 
 nmap Y y$
 
