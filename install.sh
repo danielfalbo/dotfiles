@@ -5,7 +5,6 @@ cd "${BASEDIR}"
 
 LINK_GITCONFIG=true
 INSTALL_BREW_AND_PACKAGES=true
-
 for arg in "$@"; do
     case $arg in
         --no-gitconfig)
