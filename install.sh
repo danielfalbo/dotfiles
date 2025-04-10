@@ -29,3 +29,6 @@ ln -sf "${BASEDIR}/karabiner.json" ~/.config/karabiner/karabiner.json
 ln -sf "${BASEDIR}/.vimrc" ~/.vimrc
 ln -sf "${BASEDIR}/.zshrc" ~/.zshrc
 ln -sf "${BASEDIR}/settings.json" ~/Library/Application\ Support/Code/User/settings.json
+
+/bin/rm -f ~/Library/Application\ Support/Code/User/keybindings.json
+ln -sf "${BASEDIR}/keybindings.json" ~/Library/Application\ Support/Code/User/keybindings.json
