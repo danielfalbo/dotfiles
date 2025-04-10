@@ -3,9 +3,24 @@
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${BASEDIR}"
 
-which brew || bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+LINK_GITCONFIG=true
+INSTALL_BREW_AND_PACKAGES=true
 
-/opt/homebrew/bin/brew bundle
+for arg in "$@"; do
+    case $arg in
+        --no-gitconfig)
+            LINK_GITCONFIG=false
+            ;;
+        --no-brew)
+            INSTALL_BREW_AND_PACKAGES=false
+            ;;
+    esac
+done
+
+if [[ $INSTALL_BREW_AND_PACKAGES == true ]]; then
+    which brew || bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    /opt/homebrew/bin/brew bundle
+fi
 
 defaults write com.vscodium ApplePressAndHoldEnabled -bool false
 
@@ -14,7 +29,7 @@ defaults write -g InitialKeyRepeat -int 15
 
 mkdir -p ~/Developer
 
-if [[ "$1" != "--no-gitconfig" ]]; then
+if [[ $LINK_GITCONFIG == true ]]; then
     /bin/rm -f ~/.gitconfig
     ln -sf "${BASEDIR}/.gitconfig" ~/.gitconfig
 fi
