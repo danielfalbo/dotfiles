@@ -9,6 +9,9 @@ which brew || bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/i
 
 defaults write com.vscodium ApplePressAndHoldEnabled -bool false
 
+defaults write -g KeyRepeat -int 1
+defaults write -g InitialKeyRepeat -int 15
+
 mkdir -p ~/Developer
 
 if [[ "$1" != "--no-gitconfig" ]]; then
