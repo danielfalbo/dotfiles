@@ -1,4 +1,5 @@
 [
   { "key": "ctrl+\\", "command": "workbench.action.splitEditor" },
-  { "key": "ctrl+-", "command": "workbench.action.splitEditorDown" }
+  { "key": "ctrl+-", "command": "workbench.action.splitEditorDown" },
+  { "key": "ctrl+alt+m", "command": "workbench.action.toggleMaximizedPanel" }
 ]
