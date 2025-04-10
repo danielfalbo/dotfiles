@@ -19,11 +19,11 @@ mkdir -p ~/Library/Application\ Support/Cursor/User
 /bin/rm -f ~/.gitconfig
 /bin/rm -f ~/.vimrc
 /bin/rm -f ~/.zshrc
-/bin/rm -f ~/Library/Application\ Support/Cursor/User/settings.json
+/bin/rm -f ~/Library/Application\ Support/Code/User/settings.json
 
 # create symlinks
 ln -sf "${BASEDIR}/karabiner.json" ~/.config/karabiner/karabiner.json
 # ln -sf "${BASEDIR}/.gitconfig" ~/.gitconfig
 ln -sf "${BASEDIR}/.vimrc" ~/.vimrc
 ln -sf "${BASEDIR}/.zshrc" ~/.zshrc
-ln -sf "${BASEDIR}/settings.json" ~/Library/Application\ Support/Cursor/User/settings.json
+ln -sf "${BASEDIR}/settings.json" ~/Library/Application\ Support/Code/User/settings.json

@@ -12,7 +12,6 @@ for plugin in ${homebrew_plugins}
     source ${HOMEBREW_PREFIX}/share/zsh-${plugin}/zsh-${plugin}.zsh
 
 alias rm='trash'
-alias c='cursor'
 
 function empty_commit() {
     TMPFILE=".tmp"
