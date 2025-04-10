@@ -7,20 +7,16 @@ which brew || bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/i
 
 /opt/homebrew/bin/brew bundle
 
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+defaults write com.vscodium ApplePressAndHoldEnabled -bool false
 
 mkdir -p ~/Developer
-
-mkdir -p ~/.config
-mkdir -p ~/.config/karabiner
-mkdir -p ~/Library/Application\ Support/Cursor/User
-
 
 if [[ "$1" != "--no-gitconfig" ]]; then
     /bin/rm -f ~/.gitconfig
     ln -sf "${BASEDIR}/.gitconfig" ~/.gitconfig
 fi
 
+mkdir -p ~/.config/karabiner
 /bin/rm -f ~/.config/karabiner/karabiner.json
 ln -sf "${BASEDIR}/karabiner.json" ~/.config/karabiner/karabiner.json
 
@@ -30,8 +26,8 @@ ln -sf "${BASEDIR}/.vimrc" ~/.vimrc
 /bin/rm -f ~/.zshrc
 ln -sf "${BASEDIR}/.zshrc" ~/.zshrc
 
-/bin/rm -f ~/Library/Application\ Support/Code/User/settings.json
-ln -sf "${BASEDIR}/settings.json" ~/Library/Application\ Support/Code/User/settings.json
-
-/bin/rm -f ~/Library/Application\ Support/Code/User/keybindings.json
-ln -sf "${BASEDIR}/keybindings.json" ~/Library/Application\ Support/Code/User/keybindings.json
+mkdir -p ~/Library/Application\ Support/VSCodium/User
+/bin/rm -f ~/Library/Application\ Support/VSCodium/User/settings.json
+/bin/rm -f ~/Library/Application\ Support/VSCodium/User/keybindings.json
+ln -sf "${BASEDIR}/settings.json" ~/Library/Application\ Support/VSCodium/User/settings.json
+ln -sf "${BASEDIR}/keybindings.json" ~/Library/Application\ Support/VSCodium/User/keybindings.json
