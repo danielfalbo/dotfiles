@@ -43,6 +43,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
 
   "breadcrumbs.enabled": false,
+  "chat.commandCenter.enabled": false,
   "editor.minimap.enabled": false,
   "editor.showFoldingControls": "never",
   "window.commandCenter": false,
