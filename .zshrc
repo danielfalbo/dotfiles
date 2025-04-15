@@ -23,7 +23,7 @@ function empty_commit() {
 alias cdj='[ -z "$JOURNAL_DIR" ] && echo "export JOURNAL_DIR first" && return 1 || cd $JOURNAL_DIR'
 alias j='cdj && empty_commit'
 
-alias glg='git log --pretty=format:"%C(240)%ad%Creset%s%n%b" --date=format:"%Y-%m-%d %I:%M:%S%p%n"'
+alias glg='git log --pretty=format:"%C(240)%ad%Creset%s%n%b" --date=format:"%Y-%m-%d %I:%M%p%n"'
 
 alias gsp='echo $(git status -s --porcelain)'
 alias gcp='git pull && git add . && git commit -m "$(gsp)" && git push'
