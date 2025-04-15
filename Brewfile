@@ -1,3 +1,4 @@
+brew "tldr"
 brew "trash"
 
 cask "arc"
