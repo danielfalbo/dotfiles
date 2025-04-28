@@ -3,6 +3,8 @@
 
   "git.confirmSync": false,
 
+  "git.blame.editorDecoration.enabled": true,
+
   "vim.highlightedyank.enable": true,
 
   "vim.useSystemClipboard": true,
