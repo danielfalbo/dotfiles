@@ -55,16 +55,13 @@
   "editor.wordWrap": "on",
 
   "breadcrumbs.enabled": false,
-  "chat.commandCenter.enabled": false,
-  "editor.minimap.enabled": false,
   "editor.showFoldingControls": "never",
-  "window.commandCenter": false,
-  "window.density.editorTabHeight": "compact",
   "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.orientation": "vertical",
+  "window.density.editorTabHeight": "compact",
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.startupEditor": "none",
   "workbench.statusBar.visible": false,
 
   "javascript.updateImportsOnFileMove.enabled": "always",

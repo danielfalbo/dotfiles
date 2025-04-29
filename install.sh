@@ -21,7 +21,7 @@ if [[ $INSTALL_BREW_AND_PACKAGES == true ]]; then
     /opt/homebrew/bin/brew bundle
 fi
 
-defaults write com.vscodium ApplePressAndHoldEnabled -bool false
+defaults write com.anysphere.Cursor ApplePressAndHoldEnabled -bool false
 
 defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
@@ -43,8 +43,8 @@ ln -sf "${BASEDIR}/.vimrc" ~/.vimrc
 /bin/rm -f ~/.zshrc
 ln -sf "${BASEDIR}/.zshrc" ~/.zshrc
 
-mkdir -p ~/Library/Application\ Support/VSCodium/User
-/bin/rm -f ~/Library/Application\ Support/VSCodium/User/settings.json
-/bin/rm -f ~/Library/Application\ Support/VSCodium/User/keybindings.json
-ln -sf "${BASEDIR}/settings.json" ~/Library/Application\ Support/VSCodium/User/settings.json
-ln -sf "${BASEDIR}/keybindings.json" ~/Library/Application\ Support/VSCodium/User/keybindings.json
+mkdir -p ~/Library/Application\ Support/Cursor/User
+/bin/rm -f ~/Library/Application\ Support/Cursor/User/settings.json
+/bin/rm -f ~/Library/Application\ Support/Cursor/User/keybindings.json
+ln -sf "${BASEDIR}/settings.json" ~/Library/Application\ Support/Cursor/User/settings.json
+ln -sf "${BASEDIR}/keybindings.json" ~/Library/Application\ Support/Cursor/User/keybindings.json
