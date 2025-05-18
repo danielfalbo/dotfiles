@@ -64,6 +64,9 @@ set cursorline                                " Highlight the current line
 highlight CursorLine cterm=NONE ctermbg=234   " Dark grey background
 highlight CursorLineNr cterm=NONE             " Remove underline from current line number
 
+let g:netrw_banner = 0          " hide the header in netrw
+let g:netrw_liststyle = 3       " Tree-style listing
+
 " use cursor shape as mode indicator
 set noshowmode
 let &t_SI = "\e[6 q"
