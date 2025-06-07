@@ -1,9 +1,5 @@
-brew "tldr"
 brew "trash"
 
-cask "arc"
-cask "cursor"
+cask "visual-studio-code"
 cask "karabiner-elements"
-cask "raycast"
 cask "rectangle"
-cask "shottr"
