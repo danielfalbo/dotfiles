@@ -13,27 +13,11 @@ for plugin in ${homebrew_plugins}
 
 alias rm='trash'
 
-function empty_commit() {
-    TMPFILE=".tmp"
-    vim -c "set nocursorline" -c "Goyo" -c "startinsert" "$TMPFILE"
-    [ -s "$TMPFILE" ] && git commit --allow-empty -m "$(cat "$TMPFILE")"
-    rm "$TMPFILE"
-}
-
-alias cdj='[ -z "$JOURNAL_DIR" ] && echo "export JOURNAL_DIR first" && return 1 || cd $JOURNAL_DIR'
-alias j='cdj && empty_commit'
-
-alias glg='git log --pretty=format:"%C(240)%ad%Creset%s%n%b" --date=format:"%Y-%m-%d %I:%M%p%n"'
-
-alias jl='cdj && vim -c "term zsh -i -c glg" -c "Goyo"'
-
 alias gsp='echo $(git status -s --porcelain)'
 alias gcp='git pull && git add . && git commit -m "$(gsp)" && git push'
 
 alias gd='git diff'
 alias gp='git push'
-
-alias vt='vim $(date -u +%Y-%m-%d).md'
 
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
