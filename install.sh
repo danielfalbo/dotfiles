@@ -43,8 +43,9 @@ ln -sf "${BASEDIR}/.vimrc" ~/.vimrc
 /bin/rm -f ~/.zshrc
 ln -sf "${BASEDIR}/.zshrc" ~/.zshrc
 
-mkdir -p ~/Library/Application\ Support/Cursor/User
-/bin/rm -f ~/Library/Application\ Support/Cursor/User/settings.json
-/bin/rm -f ~/Library/Application\ Support/Cursor/User/keybindings.json
-ln -sf "${BASEDIR}/settings.json" ~/Library/Application\ Support/Cursor/User/settings.json
-ln -sf "${BASEDIR}/keybindings.json" ~/Library/Application\ Support/Cursor/User/keybindings.json
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+mkdir -p ~/Library/Application\ Support/Code/User
+/bin/rm -f ~/Library/Application\ Support/Code/User/settings.json
+/bin/rm -f ~/Library/Application\ Support/Code/User/keybindings.json
+ln -sf "${BASEDIR}/settings.json" ~/Library/Application\ Support/Code/User/settings.json
+ln -sf "${BASEDIR}/keybindings.json" ~/Library/Application\ Support/Code/User/keybindings.json
