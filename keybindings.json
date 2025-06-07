@@ -1,5 +1,30 @@
 [
   { "key": "ctrl+\\", "command": "workbench.action.splitEditor" },
   { "key": "ctrl+-", "command": "workbench.action.splitEditorDown" },
-  { "key": "ctrl+alt+m", "command": "workbench.action.toggleMaximizedPanel" }
+
+  {
+    "key": "ctrl+\\",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+
+  { "key": "ctrl+alt+m", "command": "workbench.action.toggleMaximizedPanel" },
+
+  { "key": "ctrl+e", "command": "editor.action.showHover" },
+
+  {
+    "key": "ctrl+d",
+    "command": "workbench.action.terminal.killEditor",
+    "when": "terminalFocus"
+  },
+
+  {
+    "key": "ctrl+`",
+    "command": "runCommands",
+    "args": { "commands": ["workbench.action.createTerminalEditor"] }
+  },
+  { "key": "ctrl+h", "command": "workbench.action.navigateLeft" },
+  { "key": "ctrl+j", "command": "workbench.action.navigateDown" },
+  { "key": "ctrl+k", "command": "workbench.action.navigateUp" },
+  { "key": "ctrl+l", "command": "workbench.action.navigateRight" }
 ]

@@ -34,12 +34,7 @@
       "before": ["<leader>", "p"],
       "commands": ["editor.action.marker.prev"],
       "when": ["editorFocus"]
-    },
-
-    { "before": ["c-h"], "commands": ["workbench.action.navigateLeft"] },
-    { "before": ["c-l"], "commands": ["workbench.action.navigateRight"] },
-    { "before": ["c-k"], "commands": ["workbench.action.navigateUp"] },
-    { "before": ["c-j"], "commands": ["workbench.action.navigateDown"] }
+    }
   ],
 
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -55,13 +50,17 @@
   "editor.wordWrap": "on",
 
   "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.showFoldingControls": "never",
   "workbench.activityBar.location": "hidden",
-  "workbench.activityBar.orientation": "vertical",
+  "window.commandCenter": false,
   "window.density.editorTabHeight": "compact",
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "terminal",
   "workbench.statusBar.visible": false,
 
   "javascript.updateImportsOnFileMove.enabled": "always",
