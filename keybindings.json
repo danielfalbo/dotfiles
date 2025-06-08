@@ -32,5 +32,8 @@
     "command": "workbench.action.terminal.sendSequence",
     "args": { "text": ":w\n" },
     "when": "terminalFocus"
-  }
+  },
+
+  { "key": "ctrl+g", "command": "git.viewChanges" },
+  { "key": "ctrl+shift+g", "command": "git.viewStagedChanges" }
 ]
