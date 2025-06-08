@@ -10,7 +10,11 @@
 
   { "key": "ctrl+alt+m", "command": "workbench.action.toggleMaximizedPanel" },
 
-  { "key": "ctrl+e", "command": "editor.action.showHover" },
+  {
+    "key": "ctrl+e",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+  },
 
   {
     "key": "ctrl+`",
