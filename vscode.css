@@ -14,6 +14,10 @@
   height: 100vh !important;
 }
 
+#workbench\.parts\.sidebar > div.content {
+  height: 100dvh !important;
+}
+
 #workbench\.view\.explorer {
   height: 100dvh !important;
 }
@@ -23,6 +27,27 @@
   > div
   > div.monaco-scrollable-element.mac
   > div.split-view-container
+  > div {
+  height: 100dvh !important;
+}
+
+#workbench\.view\.scm
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div {
+  height: 100dvh !important;
+}
+
+#workbench\.view\.scm
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div
+  > div
+  > div.pane-body
   > div {
   height: 100dvh !important;
 }
