@@ -5,3 +5,24 @@
 .shortcuts {
   display: none;
 }
+
+#workbench\.parts\.sidebar > div.composite.title {
+  display: none;
+}
+
+#workbench\.parts\.sidebar {
+  height: 100vh !important;
+}
+
+#workbench\.view\.explorer {
+  height: 100dvh !important;
+}
+
+#workbench\.view\.explorer
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div {
+  height: 100dvh !important;
+}
