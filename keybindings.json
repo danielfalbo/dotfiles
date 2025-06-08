@@ -13,12 +13,6 @@
   { "key": "ctrl+e", "command": "editor.action.showHover" },
 
   {
-    "key": "ctrl+d",
-    "command": "workbench.action.terminal.killEditor",
-    "when": "terminalFocus"
-  },
-
-  {
     "key": "ctrl+`",
     "command": "runCommands",
     "args": { "commands": ["workbench.action.createTerminalEditor"] }
