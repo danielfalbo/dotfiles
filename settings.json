@@ -69,8 +69,8 @@
   "git.showCommitInput": false,
   "git.showActionButton": {
     "commit": false,
-    "publish": true,
-    "sync": true
+    "publish": false,
+    "sync": false
   },
 
   "javascript.updateImportsOnFileMove.enabled": "always",
