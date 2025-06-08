@@ -29,11 +29,8 @@ set autoindent
 set backspace=2
 set breakindent         " every wrapped line will continue visually indented
 
-" When open a new file remember the cursor position of the last editing
-if has("autocmd")
-        " When editing a file, always jump to the last cursor position
-        autocmd BufReadPost * if line("'\"") | exe "'\"" | endif
-endif
+" persistent cursor position
+autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"zz" | endif
 
 let loaded_matchparen = 1   " Avoid the loading of match paren plugin
 filetype plugin on 
