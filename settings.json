@@ -65,6 +65,13 @@
   "workbench.startupEditor": "none",
   "vscode_custom_css.imports": ["file://${userHome}/.dotfiles/vscode.css"],
   "workbench.statusBar.visible": false,
+  "chat.commandCenter.enabled": false,
+  "git.showCommitInput": false,
+  "git.showActionButton": {
+    "commit": false,
+    "publish": true,
+    "sync": true
+  },
 
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
