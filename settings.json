@@ -50,6 +50,7 @@
   "editor.wordWrap": "on",
 
   "breadcrumbs.enabled": false,
+  "editor.glyphMargin": false,
   "editor.minimap.enabled": false,
   "editor.scrollbar.horizontalScrollbarSize": 0,
   "editor.scrollbar.verticalScrollbarSize": 0,
@@ -57,10 +58,11 @@
   "workbench.activityBar.location": "hidden",
   "window.commandCenter": false,
   "window.density.editorTabHeight": "compact",
+  "workbench.colorCustomizations": { "sideBarTitle.foreground": "#00000000" },
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.startupEditor": "terminal",
+  "workbench.startupEditor": "readme",
   "workbench.statusBar.visible": false,
 
   "javascript.updateImportsOnFileMove.enabled": "always",
