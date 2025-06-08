@@ -62,7 +62,8 @@
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.startupEditor": "readme",
+  "workbench.startupEditor": "none",
+  "vscode_custom_css.imports": ["file://${userHome}/.dotfiles/vscode.css"],
   "workbench.statusBar.visible": false,
 
   "javascript.updateImportsOnFileMove.enabled": "always",
