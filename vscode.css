@@ -1,3 +1,4 @@
+/* Minimal Startup Page */
 .letterpress {
   display: none;
 }
@@ -6,10 +7,12 @@
   display: none;
 }
 
+/* Hide sidebar title */
 #workbench\.parts\.sidebar > div.composite.title {
   display: none;
 }
 
+/* Make sidebar take full space */
 #workbench\.parts\.sidebar {
   height: 100vh !important;
 }
@@ -18,6 +21,7 @@
   height: 100dvh !important;
 }
 
+/* Make file explorer take full space */
 #workbench\.view\.explorer {
   height: 100dvh !important;
 }
@@ -31,6 +35,7 @@
   height: 100dvh !important;
 }
 
+/* Make git sidebar take full space */
 #workbench\.view\.scm
   > div
   > div
