@@ -15,6 +15,8 @@ nmap k gk
 vmap j gj
 vmap k gk
 
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
 
 set softtabstop=4
 set shiftwidth=4
