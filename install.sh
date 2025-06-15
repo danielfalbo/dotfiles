@@ -41,6 +41,9 @@ ln -sf "${BASEDIR}/.vimrc" ~/.vimrc
 /bin/rm -f ~/.zshrc
 ln -sf "${BASEDIR}/.zshrc" ~/.zshrc
 
+/bin/rm -f ~/Library/Application\ Support/com.mitchellh.ghostty/config
+ln -sf "${BASEDIR}/ghostty.config" ~/Library/Application\ Support/com.mitchellh.ghostty/config
+
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 mkdir -p ~/Library/Application\ Support/Code/User
 /bin/rm -f ~/Library/Application\ Support/Code/User/settings.json

@@ -1,3 +1,4 @@
+brew "ghostty"
 brew "trash"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
