@@ -50,7 +50,6 @@
   "editor.wordWrap": "on",
 
   "breadcrumbs.enabled": false,
-  "editor.glyphMargin": false,
   "editor.minimap.enabled": false,
   "editor.scrollbar.horizontalScrollbarSize": 0,
   "editor.scrollbar.verticalScrollbarSize": 0,
