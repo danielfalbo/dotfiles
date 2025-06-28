@@ -1,8 +1,15 @@
+tap "cmacrae/formulae"
+tap "koekeishiya/formulae"
+
+brew "cmacrae/formulae/spacebar"
+brew "koekeishiya/formulae/skhd"
+brew "koekeishiya/formulae/yabai"
 brew "trash"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
+cask "font-jetbrains-mono-nerd-font"
 cask "ghostty"
 cask "karabiner-elements"
-cask "rectangle"
+cask "qutebrowser"
 cask "visual-studio-code"
