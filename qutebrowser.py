@@ -7,6 +7,8 @@ c.tabs.indicator.width = 0
 
 c.content.fullscreen.window = True
 
+c.input.insert_mode.auto_load = True
+
 base00 = "#181818"
 base01 = "#282828"
 base02 = "#383838"

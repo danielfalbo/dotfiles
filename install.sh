@@ -58,6 +58,8 @@ ln -sf "${BASEDIR}/keybindings.json" ~/Library/Application\ Support/Code/User/ke
 mkdir -p ~/.qutebrowser
 /bin/rm -f ~/.qutebrowser/config.py
 ln -sf "${BASEDIR}/qutebrowser.py" ~/.qutebrowser/config.py
+/bin/rm -f ~/.qutebrowser/quickmarks
+ln -sf "${BASEDIR}/quickmarks" ~/.qutebrowser/quickmarks
 
 /bin/rm -f ~/.yabairc
 ln -sf "${BASEDIR}/.yabairc" ~/.yabairc
