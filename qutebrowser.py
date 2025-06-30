@@ -10,6 +10,9 @@ c.content.fullscreen.window = True
 c.input.insert_mode.auto_load = True
 
 c.statusbar.show = "in-mode"
+c.tabs.show = "multiple"
+
+config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}; rv:136.0) Gecko/20100101 Firefox/139.0', 'https://accounts.google.com/*')
 
 base00 = "#181818"
 base01 = "#282828"
