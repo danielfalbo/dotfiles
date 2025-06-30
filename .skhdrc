@@ -52,6 +52,6 @@ alt - f: yabai -m window --toggle zoom-fullscreen
 alt - t: yabai -m window --toggle float --grid 20:20:1:1:18:18
 
 # toggle window split type
-alt - e: yabai -m window --toggle split
+alt - c: yabai -m window --toggle split
 
 # TODO: toggle spacebar
