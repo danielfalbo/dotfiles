@@ -43,22 +43,8 @@ hi User3 ctermfg=red ctermbg=black
 hi User4 ctermfg=blue ctermbg=black
 hi User5 ctermfg=white ctermbg=black
 
-function! NBuffers()
-  let bufmax = bufnr("$")
-  let nbuffers = 0
-  let i = 1
-  while i <= bufmax
-    if buflisted(i) && getbufvar(i, "&modifiable")
-      let nbuffers += 1
-    endif
-    let i += 1
-  endwhile
-  return nbuffers
-endfunction
-
 set statusline=
-set statusline +=%1*\ %n%*              "buffer number
-set statusline +=%2*/%{NBuffers()}\ %*  "total buffers
+set statusline +=%1*\ %n\ %*              "buffer number
 set statusline +=%5*%{&ff}%*            "file format
 set statusline +=%3*%y%*                "file type
 set statusline +=%4*\ %<%F%*            "full path
