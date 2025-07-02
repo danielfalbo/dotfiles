@@ -54,4 +54,5 @@ alt - t: yabai -m window --toggle float --grid 20:20:1:1:18:18
 # toggle window split type
 alt - c: yabai -m window --toggle split
 
-# TODO: toggle spacebar
+# toggle spacebar
+cmd + alt - s: spacebar -m config height && {brew services stop spacebar;yabai -m config external_bar all:0:0} || {brew services start spacebar;yabai -m config external_bar all:26:0}
