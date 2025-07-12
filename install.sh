@@ -5,7 +5,6 @@ cd "${BASEDIR}"
 
 LINK_GITCONFIG=false
 INSTALL_BREW_AND_PACKAGES=false
-RESTART_SERVICES=false
 for arg in "$@"; do
     case $arg in
         --with-gitconfig)
@@ -13,9 +12,6 @@ for arg in "$@"; do
             ;;
         --with-brew)
             INSTALL_BREW_AND_PACKAGES=true
-            ;;
-        --restart-services)
-            RESTART_SERVICES=true
             ;;
     esac
 done
@@ -54,25 +50,3 @@ mkdir -p ~/Library/Application\ Support/Code/User
 /bin/rm -f ~/Library/Application\ Support/Code/User/keybindings.json
 ln -sf "${BASEDIR}/settings.json" ~/Library/Application\ Support/Code/User/settings.json
 ln -sf "${BASEDIR}/keybindings.json" ~/Library/Application\ Support/Code/User/keybindings.json
-
-mkdir -p ~/.qutebrowser
-/bin/rm -f ~/.qutebrowser/config.py
-ln -sf "${BASEDIR}/qutebrowser.py" ~/.qutebrowser/config.py
-/bin/rm -f ~/.qutebrowser/quickmarks
-ln -sf "${BASEDIR}/quickmarks" ~/.qutebrowser/quickmarks
-
-/bin/rm -f ~/.yabairc
-ln -sf "${BASEDIR}/.yabairc" ~/.yabairc
-
-/bin/rm -f ~/.skhdrc
-ln -sf "${BASEDIR}/.skhdrc" ~/.skhdrc
-
-mkdir -p ~/.config/spacebar
-/bin/rm -f ~/.config/spacebar/spacebarrc
-ln -sf "${BASEDIR}/spacebarrc" ~/.config/spacebar/spacebarrc
-
-if [[ $RESTART_SERVICES == true ]]; then
-    brew services restart spacebar
-    yabai --restart-service
-    skhd --restart-service
-fi
