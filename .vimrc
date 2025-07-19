@@ -26,10 +26,10 @@ set incsearch		" incremental search
 set ignorecase		" ignore the case
 set smartcase		" don't ignore the case if the pattern is uppercase
 set laststatus=2	" show the status bar even with one buffer
-set ruler		" show cursor position
+set ruler		    " show cursor position
 set autoindent
 set backspace=2
-set breakindent         " every wrapped line will continue visually indented
+set breakindent     " every wrapped line will continue visually indented
 
 " persistent cursor position
 autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"zz" | endif
