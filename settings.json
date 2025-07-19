@@ -80,5 +80,7 @@
 
   "typescript.preferences.useAliasesForRenames": false,
 
-  "terminal.integrated.showExitAlert": false
+  "terminal.integrated.showExitAlert": false,
+
+  "editor.accessibilitySupport": "off"
 }
