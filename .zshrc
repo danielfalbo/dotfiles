@@ -7,10 +7,8 @@ setopt PROMPT_SUBST
 PROMPT='%F{141}%~%(?.%F{reset}.%F{red}) $ %F{reset}'
 RPROMPT='%F{green}$(parse_git_branch)%F{reset}'
 
-homebrew_plugins=(autosuggestions syntax-highlighting)
-
-for plugin in ${homebrew_plugins}
-    source ${HOMEBREW_PREFIX}/share/zsh-${plugin}/zsh-${plugin}.zsh
+source ${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias rm='trash'
 
