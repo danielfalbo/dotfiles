@@ -82,5 +82,7 @@
 
   "terminal.integrated.showExitAlert": false,
 
+  "workbench.editor.closeEmptyGroups": false,
+
   "editor.accessibilitySupport": "off"
 }

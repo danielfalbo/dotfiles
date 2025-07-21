@@ -1,11 +1,23 @@
 [
-  { "key": "ctrl+\\", "command": "workbench.action.splitEditor" },
-  { "key": "ctrl+-", "command": "workbench.action.splitEditorDown" },
-
+  {
+    "key": "ctrl+-",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.splitEditorDown",
+        "workbench.action.closeEditorsInGroup"
+      ]
+    }
+  },
   {
     "key": "ctrl+\\",
-    "command": "workbench.action.terminal.split",
-    "when": "terminalFocus"
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.splitEditor",
+        "workbench.action.closeEditorsInGroup"
+      ]
+    }
   },
 
   { "key": "ctrl+alt+m", "command": "workbench.action.toggleMaximizedPanel" },
@@ -16,11 +28,7 @@
     "when": "editorTextFocus"
   },
 
-  {
-    "key": "ctrl+`",
-    "command": "runCommands",
-    "args": { "commands": ["workbench.action.createTerminalEditor"] }
-  },
+  { "key": "ctrl+`", "command": "workbench.action.createTerminalEditor" },
 
   { "key": "ctrl+h", "command": "workbench.action.navigateLeft" },
   { "key": "ctrl+j", "command": "workbench.action.navigateDown" },
