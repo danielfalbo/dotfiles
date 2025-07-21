@@ -5,7 +5,6 @@ set background=dark
 vmap < <gv
 vmap > >gv
 
-
 nmap Y y$
 
 nmap Q @q
