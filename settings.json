@@ -55,6 +55,7 @@
   "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.showFoldingControls": "never",
   "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.orientation": "vertical",
   "window.commandCenter": false,
   "window.density.editorTabHeight": "compact",
   "workbench.colorCustomizations": { "sideBarTitle.foreground": "#00000000" },
