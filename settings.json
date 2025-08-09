@@ -59,7 +59,7 @@
   "window.commandCenter": false,
   "window.density.editorTabHeight": "compact",
   "workbench.colorCustomizations": { "sideBarTitle.foreground": "#00000000" },
-  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.editorActionsLocation": "default",
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
@@ -78,6 +78,8 @@
 
   "terminal.integrated.scrollback": 999999,
   "terminal.integrated.persistentSessionScrollback": 999999,
+
+  "workbench.editor.wrapTabs": true,
 
   "typescript.preferences.useAliasesForRenames": false,
 
