@@ -68,6 +68,10 @@
   "chat.commandCenter.enabled": false,
   "git.showCommitInput": false,
 
+  "zenMode.showTabs": "none",
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
+
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
 
