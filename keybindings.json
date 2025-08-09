@@ -43,5 +43,11 @@
   },
 
   { "key": "ctrl+shift+=", "command": "workbench.action.decreaseViewSize" },
-  { "key": "ctrl+=", "command": "workbench.action.increaseViewSize" }
+  { "key": "ctrl+=", "command": "workbench.action.increaseViewSize" },
+
+  {
+    "key": "cmd+k",
+    "command": "-cursorai.action.generateInTerminal",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalPromptBarVisible || terminalProcessSupported && terminalPromptBarVisible"
+  }
 ]
