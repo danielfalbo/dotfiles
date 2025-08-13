@@ -69,3 +69,8 @@ set noshowmode
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 set ttimeoutlen=10
+
+" read .vimrc.local if present
+if filereadable(".vimrc.local")
+  source .vimrc.local
+endif
