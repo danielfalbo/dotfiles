@@ -58,7 +58,10 @@
   "workbench.activityBar.orientation": "vertical",
   "window.commandCenter": false,
   "window.density.editorTabHeight": "compact",
-  "workbench.colorCustomizations": { "sideBarTitle.foreground": "#00000000" },
+  "workbench.colorCustomizations": {
+      "editorGroup.border": "#00000000",
+      "sideBarTitle.foreground": "#00000000"
+  },
   "workbench.editor.editorActionsLocation": "default",
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.layoutControl.enabled": false,
@@ -69,7 +72,6 @@
   "git.showCommitInput": false,
 
   "zenMode.showTabs": "none",
-  "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
 
   "javascript.updateImportsOnFileMove.enabled": "always",
