@@ -1,6 +1,4 @@
 {
-  "editor.formatOnSave": true,
-
   "git.confirmSync": false,
 
   "git.blame.editorDecoration.enabled": true,
