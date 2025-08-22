@@ -25,6 +25,7 @@ defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
 
 mkdir -p ~/Developer
+touch ~/.hushlogin
 
 if [[ $LINK_GITCONFIG == true ]]; then
     /bin/rm -f ~/.gitconfig
@@ -47,3 +48,6 @@ mkdir -p ~/Library/Application\ Support/Code/User
 /bin/rm -f ~/Library/Application\ Support/Code/User/keybindings.json
 ln -sf "${BASEDIR}/settings.json" ~/Library/Application\ Support/Code/User/settings.json
 ln -sf "${BASEDIR}/keybindings.json" ~/Library/Application\ Support/Code/User/keybindings.json
+
+mkdir -p ~/.vim/pack/plugins/start/
+git clone https://github.com/junegunn/goyo.vim.git ~/.vim/pack/plugins/start/goyo || (cd ~/.vim/pack/plugins/start/goyo && git pull)

@@ -57,8 +57,8 @@
   "window.commandCenter": false,
   "window.density.editorTabHeight": "compact",
   "workbench.colorCustomizations": {
-      "editorGroup.border": "#00000000",
-      "sideBarTitle.foreground": "#00000000"
+    "editorGroup.border": "#00000000",
+    "sideBarTitle.foreground": "#00000000"
   },
   "workbench.editor.editorActionsLocation": "default",
   "workbench.editor.tabActionCloseVisibility": false,
@@ -67,6 +67,7 @@
   "workbench.statusBar.visible": false,
   "chat.commandCenter.enabled": false,
   "git.showCommitInput": false,
+  "editor.renderLineHighlight": "none",
 
   "zenMode.showTabs": "none",
   "zenMode.fullScreen": false,
@@ -90,5 +91,5 @@
 
   "workbench.editor.closeEmptyGroups": false,
 
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
 }
