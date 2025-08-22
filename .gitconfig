@@ -1,11 +1,9 @@
-[init]
-  defaultBranch = main
-[credential "https://github.com"]
-	helper = 
-	helper = !/opt/homebrew/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = 
-	helper = !/opt/homebrew/bin/gh auth git-credential
 [user]
   name = Daniel
   email = 39460524+danielfalbo@users.noreply.github.com
+
+[github]
+  user = danielfalbo
+
+[init]
+  defaultBranch = main
