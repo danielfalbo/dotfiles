@@ -91,5 +91,5 @@
 
   "workbench.editor.closeEmptyGroups": false,
 
-  "editor.accessibilitySupport": "off",
+  "editor.accessibilitySupport": "off"
 }
