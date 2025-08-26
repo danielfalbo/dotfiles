@@ -67,6 +67,9 @@
   "chat.commandCenter.enabled": false,
   "git.showCommitInput": false,
   "editor.renderLineHighlight": "none",
+  "editor.guides.indentation": false,
+  "editor.glyphMargin": false,
+  "editor.lineNumbers": "off",
 
   "zenMode.showTabs": "none",
   "zenMode.fullScreen": false,
