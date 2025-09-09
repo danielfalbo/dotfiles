@@ -58,7 +58,6 @@ set numberwidth=5                       " width of the line number column
 highlight LineNr ctermfg=grey ctermbg=NONE         " Grey line numbers
 highlight CursorLineNr ctermfg=yellow ctermbg=NONE " Highlight current line number
 
-set cursorline                                " Highlight the current line
 highlight CursorLine cterm=NONE ctermbg=234   " Dark grey background
 highlight CursorLineNr cterm=NONE             " Remove underline from current line number
 
