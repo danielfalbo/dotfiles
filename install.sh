@@ -21,23 +21,24 @@ if [[ $INSTALL_BREW_AND_PACKAGES == true ]]; then
     /opt/homebrew/bin/brew bundle
 fi
 
+if [[ $LINK_GITCONFIG == true ]]; then
+    /bin/rm -f ~/.gitconfig
+    ln -sf "${BASEDIR}/.gitconfig" ~/.gitconfig
+fi
+
 defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
 
 mkdir -p ~/Developer
 touch ~/.hushlogin
 
-if [[ $LINK_GITCONFIG == true ]]; then
-    /bin/rm -f ~/.gitconfig
-    ln -sf "${BASEDIR}/.gitconfig" ~/.gitconfig
-fi
-
 mkdir -p ~/.config/karabiner
 /bin/rm -f ~/.config/karabiner/karabiner.json
 ln -sf "${BASEDIR}/karabiner.json" ~/.config/karabiner/karabiner.json
 
-/bin/rm -f ~/.zshrc
-ln -sf "${BASEDIR}/.zshrc" ~/.zshrc
+mkdir -p ~/.config/fish
+/bin/rm -f ~/.config/fish/config.fish
+ln -sf "${BASEDIR}/config.fish" ~/.config/fish/config.fish
 
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 mkdir -p ~/Library/Application\ Support/Code/User

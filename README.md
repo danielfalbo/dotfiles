@@ -2,8 +2,6 @@
 
 > 👨‍💻 `Daniel@Multivac ~ $ _`
 
-Inspired by geohot and antirez.
-
 ![geohotz](./geohotz.jpg)
 
 ## Installation
