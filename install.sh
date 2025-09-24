@@ -3,28 +3,8 @@
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${BASEDIR}"
 
-LINK_GITCONFIG=false
-INSTALL_BREW_AND_PACKAGES=false
-for arg in "$@"; do
-    case $arg in
-        --with-gitconfig)
-            LINK_GITCONFIG=true
-            ;;
-        --with-brew)
-            INSTALL_BREW_AND_PACKAGES=true
-            ;;
-    esac
-done
-
-if [[ $INSTALL_BREW_AND_PACKAGES == true ]]; then
-    which brew || bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    /opt/homebrew/bin/brew bundle
-fi
-
-if [[ $LINK_GITCONFIG == true ]]; then
-    /bin/rm -f ~/.gitconfig
-    ln -sf "${BASEDIR}/.gitconfig" ~/.gitconfig
-fi
+which brew || bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/opt/homebrew/bin/brew bundle
 
 defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
