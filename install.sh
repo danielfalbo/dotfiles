@@ -8,6 +8,7 @@ which brew || bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/i
 
 defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
+defaults write -g com.apple.trackpad.scaling -float 4.0
 
 mkdir -p ~/Developer
 touch ~/.hushlogin
