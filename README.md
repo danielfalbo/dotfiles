@@ -1,3 +1,5 @@
+nothing fancy.
+
 ```bash
 ./install.sh
 ```

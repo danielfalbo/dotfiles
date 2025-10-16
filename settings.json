@@ -40,7 +40,7 @@
     { "before": ["k"], "after": ["g", "k"] }
   ],
 
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "flow-dark",
 
   "editor.cursorBlinking": "solid",
   "editor.cursorSmoothCaretAnimation": "on",
@@ -78,7 +78,7 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
+  "[python]": { "editor.defaultFormatter": "charliermarsh.ruff" },
 
   "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
 
@@ -93,5 +93,11 @@
 
   "workbench.editor.closeEmptyGroups": false,
 
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "git.autofetch": true
 }
