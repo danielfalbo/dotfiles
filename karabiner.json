@@ -131,6 +131,22 @@
                 "type": "basic"
               }
             ]
+          },
+          {
+            "description": "Use option+enter to open browser",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "return_or_enter",
+                  "modifiers": {
+                    "mandatory": ["option"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": [ { "shell_command": "open -a 'Brave Browser'" } ],
+                "type": "basic"
+              }
+            ]
           }
         ]
       }
