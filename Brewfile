@@ -2,4 +2,3 @@ brew "fish"
 brew "trash"
 
 cask "karabiner-elements"
-cask "rectangle"
