@@ -71,6 +71,8 @@
   "editor.glyphMargin": false,
   "editor.lineNumbers": "off",
 
+  "editor.rulers": [80],
+
   "zenMode.showTabs": "none",
   "zenMode.fullScreen": false,
 
@@ -99,5 +101,7 @@
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "git.autofetch": true
+  "git.autofetch": true,
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "extensions.ignoreRecommendations": true
 }
