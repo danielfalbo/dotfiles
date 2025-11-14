@@ -127,7 +127,7 @@
                     "optional": []
                   }
                 },
-                "to": [ { "shell_command": "open -a Ghostty" } ],
+                "to": [{ "shell_command": "open -a Alacritty" }],
                 "type": "basic"
               }
             ]
@@ -143,7 +143,7 @@
                     "optional": []
                   }
                 },
-                "to": [ { "shell_command": "open -a 'Brave Browser'" } ],
+                "to": [{ "shell_command": "open -a 'Brave Browser'" }],
                 "type": "basic"
               }
             ]
