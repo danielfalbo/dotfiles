@@ -1,7 +1,7 @@
 {
   "git.confirmSync": false,
 
-  "git.blame.editorDecoration.enabled": true,
+  // "git.blame.editorDecoration.enabled": true,
 
   "vim.highlightedyank.enable": true,
 
@@ -43,7 +43,7 @@
   "workbench.iconTheme": "flow-dark",
 
   "editor.cursorBlinking": "solid",
-  "editor.cursorSmoothCaretAnimation": "on",
+  // "editor.cursorSmoothCaretAnimation": "on",
 
   "editor.wordWrap": "on",
 
@@ -71,7 +71,7 @@
   "editor.glyphMargin": false,
   "editor.lineNumbers": "off",
 
-  "editor.rulers": [80],
+  // "editor.rulers": [80],
 
   "zenMode.showTabs": "none",
   "zenMode.fullScreen": false,
@@ -79,10 +79,14 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
 
+  "editor.formatOnSave": true,
+
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[python]": { "editor.defaultFormatter": "charliermarsh.ruff" },
 
   "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
+
+  "terminal.integrated.defaultProfile.osx": "fish",
 
   "terminal.integrated.scrollback": 999999,
   "terminal.integrated.persistentSessionScrollback": 999999,
@@ -102,6 +106,12 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "git.autofetch": true,
-  "workbench.colorTheme": "Gruvbox Material Dark",
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }
