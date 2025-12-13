@@ -32,8 +32,12 @@ autoload -Uz compinit && compinit
 # Case-insensitive matching.
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
+# Fzf integration: start fzf on **<tab>.
+source /opt/homebrew/opt/fzf/shell/completion.zsh
+
 # More aliases.
 alias ..='cd ..'
 alias l='ls -a1'
+alias ll='ls -alh'
 alias t='tree -Ca -I .git'
 alias today="date -u +%Y-%m-%d"
