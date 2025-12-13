@@ -1,5 +1,6 @@
 brew "fzf"
 brew "lazygit"
+brew "tmux"
 brew "trash"
 brew "tree"
 brew "zsh-autosuggestions"

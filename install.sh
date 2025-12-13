@@ -19,6 +19,9 @@ ln -sf "${BASEDIR}/karabiner.json" ~/.config/karabiner/karabiner.json
 /bin/rm -f ~/.zshrc
 ln -sf "${BASEDIR}/.zshrc" ~/.zshrc
 
+/bin/rm -f ~/.tmux.conf
+ln -sf "${BASEDIR}/.tmux.conf" ~/.tmux.conf
+
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 mkdir -p ~/Library/Application\ Support/Code/User
 /bin/rm -f ~/Library/Application\ Support/Code/User/settings.json
