@@ -16,6 +16,9 @@ mkdir -p ~/.config/karabiner
 /bin/rm -f ~/.config/karabiner/karabiner.json
 ln -sf "${BASEDIR}/karabiner.json" ~/.config/karabiner/karabiner.json
 
+/bin/rm -f ~/.vimrc
+ln -sf "${BASEDIR}/.vimrc" ~/.vimrc
+
 /bin/rm -f ~/.zshrc
 ln -sf "${BASEDIR}/.zshrc" ~/.zshrc
 
