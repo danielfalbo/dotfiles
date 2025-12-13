@@ -34,4 +34,6 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # More aliases.
 alias ..='cd ..'
+alias l='ls -a1'
+alias t='tree -Ca -I .git'
 alias today="date -u +%Y-%m-%d"
