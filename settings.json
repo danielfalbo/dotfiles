@@ -86,7 +86,7 @@
 
   "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
 
-  "terminal.integrated.defaultProfile.osx": "fish",
+  // "terminal.integrated.defaultProfile.osx": "fish",
 
   "terminal.integrated.scrollback": 999999,
   "terminal.integrated.persistentSessionScrollback": 999999,
