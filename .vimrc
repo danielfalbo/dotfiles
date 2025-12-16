@@ -17,7 +17,7 @@ vmap k gk
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 
-noremap <silent><cr> :wa<cr>
+noremap <silent><cr> :noh<cr>:wa<cr>
 
 set tabstop=2
 set softtabstop=2
