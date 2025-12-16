@@ -33,6 +33,7 @@ set backspace=2
 set breakindent         " every wrapped line will continue visually indented
 set linebreak           " don't split words
 set hlsearch            " highlight all matches for the last search pattern
+set shortmess-=S        " show [current/total] search occurrences info
 set colorcolumn=80      " highlight 80th col
 
 " persistent cursor position
