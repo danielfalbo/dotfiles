@@ -25,7 +25,7 @@ set shiftwidth=2
 set expandtab
 
 set incsearch           " incremental search
-set ignorecase		      " ignore the case
+set ignorecase          " ignore the case
 set smartcase           " don't ignore the case if the pattern is uppercase
 set ruler               " show cursor position
 set autoindent          " auto-indent new lines
