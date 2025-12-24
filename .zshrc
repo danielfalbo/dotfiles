@@ -39,5 +39,5 @@ source /opt/homebrew/opt/fzf/shell/completion.zsh
 alias ..='cd ..'
 alias l='ls -a1'
 alias ll='ls -alh'
-alias t='tree -Ca -I .git'
+alias t='tree -a -I .git'
 alias today="date -u +%Y-%m-%d"
