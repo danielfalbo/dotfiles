@@ -1,5 +1,6 @@
 syntax sync fromstart
 syntax on
+colorscheme habamax
 set background=dark
 
 vmap < <gv
@@ -67,7 +68,7 @@ highlight CursorLine cterm=NONE ctermbg=234
 highlight CursorLineNr cterm=NONE
 
 " Highlight trailing whitespace
-highlight TrailingWhitespace ctermbg=red
+highlight TrailingWhitespace ctermbg=131 " Terracotta/Muted Red (File type)
 autocmd BufWinEnter,WinEnter * match TrailingWhitespace /\s\+$/
 
 " use cursor shape as mode indicator
@@ -84,11 +85,17 @@ endif
 " Always show the status bar
 set laststatus=2
 
-hi User1 ctermfg=green ctermbg=black
-hi User2 ctermfg=yellow ctermbg=black
-hi User3 ctermfg=red ctermbg=black
-hi User4 ctermfg=blue ctermbg=black
-hi User5 ctermfg=white ctermbg=black
+" hi User1 ctermfg=green ctermbg=black
+" hi User2 ctermfg=yellow ctermbg=black
+" hi User3 ctermfg=red ctermbg=black
+" hi User4 ctermfg=blue ctermbg=black
+" hi User5 ctermfg=white ctermbg=black
+
+hi User1 ctermfg=2   ctermbg=235 " Muted Green (Buffer #)
+hi User2 ctermfg=3   ctermbg=235 " Muted Yellow (Modified/Total Lines)
+hi User3 ctermfg=131 ctermbg=235 " Terracotta/Muted Red (File type)
+hi User4 ctermfg=6   ctermbg=235 " Muted Cyan/Blue (Path)
+hi User5 ctermfg=250 ctermbg=235 " Light Grey (Line info)
 
 set statusline=
 set statusline +=%1*\ %n\ %*            "buffer number
