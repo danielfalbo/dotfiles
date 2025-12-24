@@ -35,7 +35,10 @@ set linebreak           " don't split words
 set hlsearch            " highlight all matches for the last search pattern
 set shortmess-=S        " show [current/total] search occurrences info
 set colorcolumn=80      " highlight 80th col
-set undofile            " persistent undo
+
+" persistent undo
+set undofile
+set undodir=~/.vim/undodir
 
 " persistent cursor position
 autocmd BufReadPost *
