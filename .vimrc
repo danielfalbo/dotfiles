@@ -1,6 +1,8 @@
 syntax sync fromstart
 syntax on
+
 colorscheme habamax
+highlight Normal ctermbg=none
 set background=dark
 
 vmap < <gv
