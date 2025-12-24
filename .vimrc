@@ -17,6 +17,8 @@ nmap k gk
 vmap j gj
 vmap k gk
 
+nnoremap <space> %
+
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 
