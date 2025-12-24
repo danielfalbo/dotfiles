@@ -5,7 +5,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export CLICOLOR=1
 
 # Cool simple prompt.
-export PS1='%F{green}%c%(?.%F{reset}.%F{red}) » %F{reset}'
+export PS1='%F{71}%c%(?.%F{reset}.%F{131}) » %F{reset}'
 
 # Use brew plugins 'zsh-autosuggestions' and 'zsh-syntax-highlighting'.
 source ${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
