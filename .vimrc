@@ -77,11 +77,6 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 set ttimeoutlen=10
 
-" Read .vimrc.local if present
-if filereadable(".vimrc.local")
-  source .vimrc.local
-endif
-
 " Always show the status bar
 set laststatus=2
 
