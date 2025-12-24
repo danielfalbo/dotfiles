@@ -10,7 +10,8 @@ defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
 defaults write -g com.apple.trackpad.scaling -float 4.0
 
-touch ~/.hushlogin
+touch ~/.hushlogin # suppress "last login" string in macos terminal.app
+mkdir -p ~/.vim/undodir # prepare vim persistent undo dir
 
 mkdir -p ~/.config/karabiner
 /bin/rm -f ~/.config/karabiner/karabiner.json
