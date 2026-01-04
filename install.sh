@@ -10,6 +10,15 @@ defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
 defaults write -g com.apple.trackpad.scaling -float 4.0
 
+# install vim plugins using built-in packages manager
+vim_plugins_dir="$HOME/.vim/pack/plugins/start"
+mkdir -p "$vim_plugins_dir"
+if [ ! -d "$vim_plugins_dir/goyo" ]; then
+    git clone https://github.com/junegunn/goyo.vim.git "$vim_plugins_dir/goyo"
+else
+    git -C "$vim_plugins_dir/goyo" pull
+fi
+
 touch ~/.hushlogin # suppress "last login" string in macos terminal.app
 mkdir -p ~/.vim/undodir # prepare vim persistent undo dir
 
