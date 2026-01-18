@@ -11,9 +11,6 @@ export PS1='%F{71}%c%(?.%F{reset}.%F{131}) » %F{reset}'
 source ${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Make 'rm' just move to trash.
-alias rm='trash'
-
 # Git aliases.
 alias gcp='git pull && git add . && git commit -m "$(gsp)" && git push'
 alias gd='git diff'
