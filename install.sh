@@ -41,3 +41,7 @@ mkdir -p ~/Library/Application\ Support/Code/User
 /bin/rm -f ~/Library/Application\ Support/Code/User/keybindings.json
 ln -sf "${BASEDIR}/settings.json" ~/Library/Application\ Support/Code/User/settings.json
 ln -sf "${BASEDIR}/keybindings.json" ~/Library/Application\ Support/Code/User/keybindings.json
+
+mkdir -p ~/Library/Application\ Support/com.mitchellh.ghostty/
+/bin/rm -f ~/Library/Application\ Support/com.mitchellh.ghostty/config
+ln -sf "${BASEDIR}/ghostty" ~/Library/Application\ Support/com.mitchellh.ghostty/config

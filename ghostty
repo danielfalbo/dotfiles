@@ -1,0 +1,31 @@
+# Ghostty config ( ~/Library/Application\ Support/com.mitchellh.ghostty/config)
+
+# git clone https://github.com/0xhckr/ghostty-shaders.git ~/.ghostty-shaders
+
+# https://catskull.net/fun-with-ghostty-shaders.html
+
+window-decoration = none
+# >_ ghostty +list-themes
+theme = 12-bit Rainbow
+# theme = light:Dayfox, dark:Nordfox
+# theme = Spacegray
+# theme = Solarized Dark Patched
+background = #1b1d22
+# background = #2E3440
+keybind = shift+enter=text:\n
+font-size = 18
+# background-opacity = 0.9
+# background-blur = true
+window-padding-x = 8
+window-padding-y = 8
+window-height = 36
+window-width = 120
+command = /bin/sh -c "/opt/homebrew/bin/tmux a || /opt/homebrew/bin/tmux"
+# command = /opt/homebrew/bin/fish
+quit-after-last-window-closed = true
+mouse-hide-while-typing = true
+# custom-shader = ~/.ghostty-shaders/bettercrt.glsl
+# custom-shader = ~/.ghostty-shaders/retro-terminal.glsl
+# custom-shader = ~/.ghostty-shaders/tft.glsl
+# custom-shader = ~/.ghostty-shaders/bloom.glsl
+# custom-shader = ~/.ghostty-shaders/cursor_blaze.glsl
