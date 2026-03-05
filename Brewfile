@@ -5,6 +5,7 @@ brew "tree"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
+cask "brave-browser"
 cask "ghostty"
 cask "homerow"
 cask "karabiner-elements"
