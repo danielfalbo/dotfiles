@@ -1,19 +1,7 @@
 {
   "global": { "show_in_menu_bar": false },
-
   "profiles": [
     {
-      "name": "Default profile",
-
-      "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" },
-
-      "simple_modifications": [
-        {
-          "from": { "key_code": "caps_lock" },
-          "to": { "key_code": "left_control" }
-        }
-      ],
-
       "complex_modifications": {
         "rules": [
           {
@@ -22,9 +10,7 @@
               {
                 "from": {
                   "key_code": "tab",
-                  "modifiers": {
-                    "mandatory": ["left_control"]
-                  }
+                  "modifiers": { "mandatory": ["left_control"] }
                 },
                 "to": [
                   {
@@ -37,9 +23,7 @@
               {
                 "from": {
                   "key_code": "tab",
-                  "modifiers": {
-                    "mandatory": ["left_control", "shift"]
-                  }
+                  "modifiers": { "mandatory": ["left_control", "shift"] }
                 },
                 "to": [
                   {
@@ -143,13 +127,56 @@
                     "optional": []
                   }
                 },
-                "to": [{ "shell_command": "open -a Safari" }],
+                "to": [{ "shell_command": "open -a 'Brave Browser'" }],
                 "type": "basic"
               }
             ]
           }
         ]
-      }
+      },
+      "devices": [
+        {
+          "identifiers": {
+            "is_keyboard": true,
+            "product_id": 16641,
+            "vendor_id": 1578
+          },
+          "simple_modifications": [
+            {
+              "from": { "key_code": "left_command" },
+              "to": [{ "key_code": "left_option" }]
+            },
+            {
+              "from": { "key_code": "left_option" },
+              "to": [{ "key_code": "left_command" }]
+            },
+            {
+              "from": { "key_code": "right_option" },
+              "to": [{ "key_code": "right_command" }]
+            },
+            {
+              "from": { "key_code": "application" },
+              "to": [{ "key_code": "right_option" }]
+            },
+            {
+              "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
+              "to": [{ "key_code": "left_control" }]
+            },
+            {
+              "from": { "key_code": "left_control" },
+              "to": [{ "apple_vendor_top_case_key_code": "keyboard_fn" }]
+            }
+          ]
+        }
+      ],
+      "name": "Default profile",
+      "simple_modifications": [
+        {
+          "from": { "key_code": "caps_lock" },
+          "to": [{ "key_code": "left_control" }]
+        }
+      ],
+      "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
     }
   ]
 }
