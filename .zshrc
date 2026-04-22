@@ -18,6 +18,13 @@ export CLICOLOR=1
 # Cool simple prompt.
 export PS1='%F{71}%c%(?.%F{reset}.%F{131}) » %F{reset}'
 
+# git branch on RPROMPT
+setopt prompt_subst
+autoload -Uz vcs_info
+precmd_functions=(${precmd_functions:#vcs_info} vcs_info)
+zstyle ':vcs_info:git:*' formats '%F{244}%b%f'
+export RPROMPT='${vcs_info_msg_0_}'
+
 # Use brew plugins 'zsh-autosuggestions' and 'zsh-syntax-highlighting'.
 for plugin_path in \
   "${HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh" \
