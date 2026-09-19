@@ -63,4 +63,8 @@ alias ll='ls -alh'
 alias t='tree -a -I .git'
 alias today="date -u +%Y-%m-%d"
 
+# Vercel multi-account aliases
+alias vercel-personal="vercel --global-config ~/.local/share/com.vercel.cli-personal"
+alias vercel-ltf-tech="vercel --global-config ~/.local/share/com.vercel.cli-ltf-tech"
+
 export PATH="$HOME/.npm-global/bin:$PATH"
